@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testvar">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testvar -->
+			<!-- End of parts of the pmodel testvar -->
+			
+			<!-- Start of links of the pmodel testvar -->
+			<!-- link full name is testvar::Tip -->
+			<link name="1-Tip">
+					<pose>1.0 -10.0 0.0 7.0 1.5707499980926514 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>7.0</mass>
+					</inertial>
+			</link>	
+			<!-- End of links of the pmodel testvar -->
+			
+			<!-- Start of joints of the pmodel testvar -->
+			<!-- End of joints of the pmodel testvar -->
+			
+			<!-- Start of fixed connections of the pmodel testvar -->
+			<!-- End of fixed connections of the pmodel testvar -->
+		</model>
+</sdf>

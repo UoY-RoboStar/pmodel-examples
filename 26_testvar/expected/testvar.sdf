@@ -1,0 +1,171 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testvar">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testvar -->
+				<!-- Start of declarations for part "testvar::TEST" -->
+					<!-- Start of parts of part "testvar::TEST" -->
+					<!-- End of parts of part "testvar::TEST" -->
+					
+					<!-- Start of links of part "testvar::TEST" -->
+					<!-- link full name is testvar::TEST::Wheel -->
+					<link name="1-Wheel">
+							<pose>1.027278922195039 -0.01751559451208167 0.02500000037252903 1.5707499980926514 -0.0 2.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+					</link>	
+					<!-- link full name is testvar::TEST::Track -->
+					<link name="2-Track">
+							<pose>1.0 -0.029999999329447746 0.02500000037252903 0.0 0.0 2.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is testvar::TEST::Track::my_body -->
+							<collision name="1--my_body">
+								<laser_retro>0.0</laser_retro>
+								<pose>3.1414999961853027 0.05000000074505806 0.8999999761581421 3.0 4.0 0.0</pose>
+								<geometry>
+									<sphere>
+										<radius>4.0</radius>
+									</sphere>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="1--my_body">
+								<laser_retro>0.0</laser_retro>
+								<pose>3.1414999961853027 0.05000000074505806 0.8999999761581421 3.0 4.0 0.0</pose>
+								<geometry>
+									<sphere>
+										<radius>4.0</radius>
+									</sphere>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is my_sonar_sensor -->
+							<sensor name="my_sonar_sensor" type="sonar">
+								<pose>0.0 0.0 0.8999999761581421 2.2831853071795867 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1.0</update_rate>
+								<sonar>
+									<min>4</min>
+									<max>4.0</max>
+									<radius>-0.029999999329447746</radius>
+								</sonar>
+							</sensor>
+					</link>	
+					<!-- End of links of part "testvar::TEST" -->
+					
+					<!-- Start of joints of part "testvar::TEST" -->
+					<!-- End of joints of part "testvar::TEST" -->
+					
+					<!-- Start of fixed connections of part "testvar::TEST" -->
+					
+					<!-- End of fixed connections of part "testvar::TEST" -->
+				<!-- End of declarations for part "testvar::TEST" -->
+			<!-- End of parts of the pmodel testvar -->
+			
+			<!-- Start of links of the pmodel testvar -->
+			<!-- link full name is testvar::Core -->
+			<link name="3-Core">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor" type="sonar">
+						<pose>0.0 0.0 0.8999999761581421 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>3.0</min>
+							<max>3</max>
+							<radius>1.0</radius>
+						</sonar>
+					</sensor>
+			</link>	
+			<!-- End of links of the pmodel testvar -->
+			
+			<!-- Start of joints of the pmodel testvar -->
+			<!-- End of joints of the pmodel testvar -->
+			
+			<!-- Start of fixed connections of the pmodel testvar -->
+			<!-- fixed joint full name is testvar::Core::fixedJoint::testvar::TEST::Track from testvar::Core to testvar::TEST::Track -->
+			<joint name="4-fixedJoint" type="fixed">
+				<parent>3-Core</parent>
+				<child>2-Track</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- End of fixed connections of the pmodel testvar -->
+		</model>
+</sdf>

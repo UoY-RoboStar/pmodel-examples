@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="LLink">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel LLink -->
+			<!-- End of parts of the pmodel LLink -->
+			
+			<!-- Start of links of the pmodel LLink -->
+			<!-- link full name is LLink::Tip -->
+			<link name="1-Tip">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- End of links of the pmodel LLink -->
+			
+			<!-- Start of joints of the pmodel LLink -->
+			<!-- End of joints of the pmodel LLink -->
+			
+			<!-- Start of fixed connections of the pmodel LLink -->
+			<!-- End of fixed connections of the pmodel LLink -->
+		</model>
+</sdf>

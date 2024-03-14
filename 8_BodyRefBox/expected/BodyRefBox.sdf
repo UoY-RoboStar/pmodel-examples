@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="BodyRefBox">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel BodyRefBox -->
+			<!-- End of parts of the pmodel BodyRefBox -->
+			
+			<!-- Start of links of the pmodel BodyRefBox -->
+			<!-- link full name is BodyRefBox::Tip -->
+			<link name="1-Tip">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is BodyRefBox::Tip::my_body_ref -->
+					<collision name="1--my_body_ref">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.10000000149011612 0.20000000298023224 0.30000001192092896</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--my_body_ref">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.10000000149011612 0.20000000298023224 0.30000001192092896</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel BodyRefBox -->
+			
+			<!-- Start of joints of the pmodel BodyRefBox -->
+			<!-- End of joints of the pmodel BodyRefBox -->
+			
+			<!-- Start of fixed connections of the pmodel BodyRefBox -->
+			<!-- End of fixed connections of the pmodel BodyRefBox -->
+		</model>
+</sdf>

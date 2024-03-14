@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="jointtest">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel jointtest -->
+			<!-- End of parts of the pmodel jointtest -->
+			
+			<!-- Start of links of the pmodel jointtest -->
+			<!-- link full name is jointtest::linkA -->
+			<link name="1-linkA">
+					<pose>0.0 0.5 0.5 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- link full name is jointtest::linkB -->
+			<link name="2-linkB">
+					<pose>0.0 -0.5 0.5 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- End of links of the pmodel jointtest -->
+			
+			<!-- Start of joints of the pmodel jointtest -->
+			<!-- Full name of joint: jointtest::linkA::barAB_joint from jointtest::linkA to jointtest::linkB-->
+			<joint name="3-barAB_joint" type="revolute">
+				<pose>0.0 0.5 0.0 0.0 -0.0 0.0</pose>
+				<parent>1-linkA</parent>
+				<child>2-linkB</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 3-barAB_joint to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- End of joints of the pmodel jointtest -->
+			
+			<!-- Start of fixed connections of the pmodel jointtest -->
+			<!-- End of fixed connections of the pmodel jointtest -->
+		</model>
+</sdf>

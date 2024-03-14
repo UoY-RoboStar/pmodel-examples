@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="ASCII"?>
+<physmod:PMPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:physmod="http://www.robocalc.circus/PhysMod" xmlns:robochart="http://www.robocalc.circus/RoboChart" name="rotatingscanner">
+  <imports importedNamespace="common::*"/>
+  <imports importedNamespace="physmod::math::*"/>
+  <imports importedNamespace="physmod::actuators::LED"/>
+  <imports importedNamespace="physmod::sensors::IR"/>
+  <imports importedNamespace="physmod::joints::Revolute"/>
+  <pmodels name="RotatingScanner">
+    <parts name="longrange" model="//@pmodels.1">
+      <pose>
+        <x xsi:type="physmod:UnitExp">
+          <exp xsi:type="robochart:ParExp">
+            <exp xsi:type="robochart:Mult">
+              <left xsi:type="robochart:FloatExp" value="0.044"/>
+              <right xsi:type="robochart:CallExp">
+                <function xsi:type="robochart:RefExp">
+                  <ref xsi:type="robochart:Function" href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/math.pm#//@functions.1"/>
+                </function>
+                <args xsi:type="robochart:Div">
+                  <left xsi:type="robochart:Mult">
+                    <left xsi:type="robochart:RefExp" ref="//@pmodels.0/@parts.0/@index"/>
+                    <right xsi:type="robochart:RefExp">
+                      <ref xsi:type="robochart:Field" href="RSModule.pm#|3"/>
+                    </right>
+                  </left>
+                  <right xsi:type="robochart:IntegerExp" value="2"/>
+                </args>
+              </right>
+            </exp>
+          </exp>
+          <unit xsi:type="physmod:UnitReference">
+            <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+          </unit>
+        </x>
+        <y xsi:type="physmod:UnitExp">
+          <exp xsi:type="robochart:ParExp">
+            <exp xsi:type="robochart:Mult">
+              <left xsi:type="robochart:FloatExp" value="0.044"/>
+              <right xsi:type="robochart:CallExp">
+                <function xsi:type="robochart:RefExp">
+                  <ref xsi:type="robochart:Function" href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/math.pm#//@functions.0"/>
+                </function>
+                <args xsi:type="robochart:Div">
+                  <left xsi:type="robochart:Mult">
+                    <left xsi:type="robochart:RefExp" ref="//@pmodels.0/@parts.0/@index"/>
+                    <right xsi:type="robochart:RefExp">
+                      <ref xsi:type="robochart:Field" href="RSModule.pm#|7"/>
+                    </right>
+                  </left>
+                  <right xsi:type="robochart:IntegerExp" value="2"/>
+                </args>
+              </right>
+            </exp>
+          </exp>
+          <unit xsi:type="physmod:UnitReference">
+            <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+          </unit>
+        </y>
+        <z xsi:type="physmod:UnitExp">
+          <exp xsi:type="robochart:FloatExp" value="0.0055"/>
+          <unit xsi:type="physmod:UnitReference">
+            <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+          </unit>
+        </z>
+        <roll xsi:type="robochart:FloatExp"/>
+        <pitch xsi:type="robochart:IntegerExp"/>
+        <yaw xsi:type="robochart:Div">
+          <left xsi:type="robochart:Mult">
+            <left xsi:type="robochart:RefExp" ref="//@pmodels.0/@parts.0/@index"/>
+            <right xsi:type="robochart:RefExp">
+              <ref xsi:type="robochart:Field" href="RSModule.pm#|11"/>
+            </right>
+          </left>
+          <right xsi:type="robochart:IntegerExp" value="2"/>
+        </yaw>
+      </pose>
+      <index name="i">
+        <range xsi:type="robochart:RangeExp" linterval="[" rinterval=")">
+          <lrange xsi:type="robochart:IntegerExp"/>
+          <rrange xsi:type="robochart:IntegerExp" value="4"/>
+        </range>
+      </index>
+    </parts>
+    <links xsi:type="physmod:LocalLink" name="Base">
+      <pose>
+        <x xsi:type="robochart:IntegerExp"/>
+        <y xsi:type="robochart:IntegerExp"/>
+        <z xsi:type="robochart:IntegerExp"/>
+        <roll xsi:type="robochart:IntegerExp"/>
+        <pitch xsi:type="robochart:IntegerExp"/>
+        <yaw xsi:type="robochart:IntegerExp"/>
+      </pose>
+      <bodies xsi:type="physmod:LocalBody" name="Frame">
+        <def xsi:type="physmod:BodyDef">
+          <geometry xsi:type="physmod:Cylinder">
+            <radius xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.065"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </radius>
+            <length xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.001"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </length>
+          </geometry>
+        </def>
+      </bodies>
+      <joints xsi:type="physmod:ReferenceJoint" name="rj">
+        <_annotation>
+          <template href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.0"/>
+          <instantiations xsi:type="physmod:AnnotationTemplateInstantiation">
+            <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.0/@parameters.0"/>
+            <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+              <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.4/@parameters.0"/>
+              <value xsi:type="robochart:TupleExp">
+                <values xsi:type="robochart:IntegerExp"/>
+                <values xsi:type="robochart:IntegerExp"/>
+                <values xsi:type="robochart:IntegerExp" value="1"/>
+              </value>
+            </instantiations>
+            <template href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.4"/>
+          </instantiations>
+        </_annotation>
+        <flexible link="//@pmodels.0/@links.1"/>
+        <def xsi:type="physmod:JointDef" href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/joints.pm#//@joints.0"/>
+        <instantiations>
+          <name href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/joints.pm#//@joints.0/@constants.0/@vars.0"/>
+          <value xsi:type="robochart:TupleExp">
+            <values xsi:type="robochart:IntegerExp"/>
+            <values xsi:type="robochart:IntegerExp"/>
+            <values xsi:type="robochart:IntegerExp" value="1"/>
+          </value>
+        </instantiations>
+      </joints>
+      <def xsi:type="physmod:LinkDef">
+        <inertial>
+          <mass xsi:type="physmod:UnitExp">
+            <exp xsi:type="robochart:FloatExp" value="0.01"/>
+            <unit xsi:type="physmod:UnitReference">
+              <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.3"/>
+            </unit>
+          </mass>
+        </inertial>
+      </def>
+    </links>
+    <links xsi:type="physmod:LocalLink" name="Core">
+      <pose>
+        <x xsi:type="robochart:IntegerExp"/>
+        <y xsi:type="robochart:IntegerExp"/>
+        <z xsi:type="physmod:UnitExp">
+          <exp xsi:type="robochart:FloatExp" value="0.0055"/>
+          <unit xsi:type="physmod:UnitReference">
+            <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+          </unit>
+        </z>
+        <roll xsi:type="robochart:IntegerExp"/>
+        <pitch xsi:type="robochart:IntegerExp"/>
+        <yaw xsi:type="robochart:IntegerExp"/>
+      </pose>
+      <fixed link="//@pmodels.1/@links.0" part="//@pmodels.0/@parts.0"/>
+      <bodies xsi:type="physmod:LocalBody" name="Spine">
+        <def xsi:type="physmod:BodyDef">
+          <geometry xsi:type="physmod:Cylinder">
+            <radius xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.04"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </radius>
+            <length xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.01"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </length>
+          </geometry>
+        </def>
+      </bodies>
+      <bodies xsi:type="physmod:LocalBody" name="Top">
+        <pose>
+          <x xsi:type="robochart:IntegerExp"/>
+          <y xsi:type="robochart:IntegerExp"/>
+          <z xsi:type="physmod:UnitExp">
+            <exp xsi:type="robochart:FloatExp" value="0.0055"/>
+            <unit xsi:type="physmod:UnitReference">
+              <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+            </unit>
+          </z>
+          <roll xsi:type="robochart:IntegerExp"/>
+          <pitch xsi:type="robochart:IntegerExp"/>
+          <yaw xsi:type="robochart:IntegerExp"/>
+        </pose>
+        <def xsi:type="physmod:BodyDef">
+          <geometry xsi:type="physmod:Cylinder">
+            <radius xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.085"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </radius>
+            <length xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.001"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </length>
+          </geometry>
+        </def>
+      </bodies>
+      <def xsi:type="physmod:LinkDef"/>
+    </links>
+  </pmodels>
+  <pmodels name="LR_IR">
+    <links xsi:type="physmod:LocalLink" name="Body">
+      <bodies xsi:type="physmod:LocalBody" name="Box">
+        <def xsi:type="physmod:BodyDef">
+          <geometry xsi:type="physmod:Box">
+            <x xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.008"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </x>
+            <y xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.016"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </y>
+            <z xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.008"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </z>
+          </geometry>
+        </def>
+      </bodies>
+      <sensors xsi:type="physmod:ReferenceSensor" name="IRSensor">
+        <pose>
+          <x xsi:type="physmod:UnitExp">
+            <exp xsi:type="robochart:FloatExp" value="0.004"/>
+            <unit xsi:type="physmod:UnitReference">
+              <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+            </unit>
+          </x>
+          <y xsi:type="robochart:Neg">
+            <exp xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.004"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </exp>
+          </y>
+          <z xsi:type="robochart:IntegerExp"/>
+          <roll xsi:type="robochart:IntegerExp"/>
+          <pitch xsi:type="robochart:IntegerExp"/>
+          <yaw xsi:type="robochart:IntegerExp"/>
+        </pose>
+        <_annotation>
+          <template href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.44"/>
+          <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+            <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.44/@parameters.0"/>
+            <value xsi:type="robochart:BooleanExp" value="true"/>
+          </instantiations>
+          <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+            <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.44/@parameters.1"/>
+            <value xsi:type="robochart:IntegerExp" value="1"/>
+          </instantiations>
+          <instantiations xsi:type="physmod:AnnotationTemplateInstantiation">
+            <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.44/@parameters.2"/>
+            <instantiations xsi:type="physmod:AnnotationTemplateInstantiation">
+              <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.45/@parameters.0"/>
+              <instantiations xsi:type="physmod:AnnotationTemplateInstantiation">
+                <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.46/@parameters.0"/>
+                <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+                  <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.47/@parameters.0"/>
+                  <value xsi:type="robochart:IntegerExp" value="1"/>
+                </instantiations>
+                <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+                  <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.47/@parameters.1"/>
+                  <value xsi:type="robochart:FloatExp" value="1.0"/>
+                </instantiations>
+                <template href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.47"/>
+              </instantiations>
+              <instantiations xsi:type="physmod:AnnotationTemplateInstantiation">
+                <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.46/@parameters.1"/>
+                <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+                  <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.48/@parameters.0"/>
+                  <value xsi:type="robochart:IntegerExp" value="1"/>
+                </instantiations>
+                <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+                  <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.48/@parameters.1"/>
+                  <value xsi:type="robochart:FloatExp" value="1.0"/>
+                </instantiations>
+                <template href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.48"/>
+              </instantiations>
+              <template href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.46"/>
+            </instantiations>
+            <instantiations xsi:type="physmod:AnnotationTemplateInstantiation">
+              <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.45/@parameters.1"/>
+              <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+                <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.49/@parameters.0"/>
+                <value xsi:type="robochart:FloatExp"/>
+              </instantiations>
+              <instantiations xsi:type="physmod:AnnotationValueInstantiation">
+                <parameter href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.49/@parameters.1"/>
+                <value xsi:type="robochart:FloatExp" value="0.1"/>
+              </instantiations>
+              <template href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.49"/>
+            </instantiations>
+            <template href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sdf/annotations.pm#//@templates.45"/>
+          </instantiations>
+        </_annotation>
+        <def xsi:type="physmod:SensorDef" href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/sensors.pm#//@sensors.0"/>
+      </sensors>
+      <actuators xsi:type="physmod:ReferenceActuator" name="LeftLED">
+        <pose>
+          <x xsi:type="physmod:UnitExp">
+            <exp xsi:type="robochart:FloatExp" value="0.004"/>
+            <unit xsi:type="physmod:UnitReference">
+              <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+            </unit>
+          </x>
+          <y xsi:type="robochart:Neg">
+            <exp xsi:type="physmod:UnitExp">
+              <exp xsi:type="robochart:FloatExp" value="0.004"/>
+              <unit xsi:type="physmod:UnitReference">
+                <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+              </unit>
+            </exp>
+          </y>
+          <z xsi:type="robochart:IntegerExp"/>
+          <roll xsi:type="robochart:IntegerExp"/>
+          <pitch xsi:type="robochart:IntegerExp"/>
+          <yaw xsi:type="robochart:IntegerExp"/>
+        </pose>
+        <def xsi:type="physmod:ActuatorDef" href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/actuators.pm#//@actuators.2"/>
+      </actuators>
+      <def xsi:type="physmod:LinkDef">
+        <inertial>
+          <mass xsi:type="physmod:UnitExp">
+            <exp xsi:type="robochart:FloatExp" value="0.001"/>
+            <unit xsi:type="physmod:UnitReference">
+              <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.3"/>
+            </unit>
+          </mass>
+        </inertial>
+      </def>
+    </links>
+  </pmodels>
+</physmod:PMPackage>

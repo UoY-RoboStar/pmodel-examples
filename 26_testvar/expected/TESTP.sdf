@@ -1,0 +1,121 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="TESTP">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel TESTP -->
+			<!-- End of parts of the pmodel TESTP -->
+			
+			<!-- Start of links of the pmodel TESTP -->
+			<!-- link full name is TESTP::Wheel -->
+			<link name="1-Wheel">
+					<pose>0.0 -1.0 0.0 1.5707499980926514 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- link full name is TESTP::Track -->
+			<link name="2-Track">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is TESTP::Track::my_body -->
+					<collision name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>3.1414999961853027 2.0 0.8999999761581421 3.0 4.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>4.0</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>3.1414999961853027 2.0 0.8999999761581421 3.0 4.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>4.0</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor" type="sonar">
+						<pose>0.0 0.0 0.8999999761581421 2.2831853071795867 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>4</min>
+							<max>4.0</max>
+							<radius>-1.0</radius>
+						</sonar>
+					</sensor>
+			</link>	
+			<!-- End of links of the pmodel TESTP -->
+			
+			<!-- Start of joints of the pmodel TESTP -->
+			<!-- End of joints of the pmodel TESTP -->
+			
+			<!-- Start of fixed connections of the pmodel TESTP -->
+			<!-- End of fixed connections of the pmodel TESTP -->
+		</model>
+</sdf>

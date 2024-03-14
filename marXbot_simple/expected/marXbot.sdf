@@ -1,0 +1,2575 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="marXbot">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel marXbot -->
+				<!-- Start of declarations for part "marXbot::p1" -->
+					<!-- Start of parts of part "marXbot::p1" -->
+					<!-- Start of declarations for part "marXbot::p1::LTreel" -->
+						<!-- Start of parts of part "marXbot::p1::LTreel" -->
+						<!-- End of parts of part "marXbot::p1::LTreel" -->
+						
+						<!-- Start of links of part "marXbot::p1::LTreel" -->
+						<!-- link full name is marXbot::p1::LTreel::Wheel -->
+						<link name="1-Wheel">
+								<pose>0.0 0.059999998530114576 0.024997220650460422 -1.5709353129016326 -0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>1.0</mass>
+								</inertial>
+								<!-- body full name is marXbot::p1::LTreel::Wheel::Wheel -->
+								<collision name="1--Wheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.025025001541152614</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="1--Wheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.025025001541152614</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+						</link>	
+						<!-- link full name is marXbot::p1::LTreel::Track -->
+						<link name="2-Track">
+								<pose>0.0 0.029999999329447746 0.02500000037252903 3.1414999961853027 0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>1.0</mass>
+								</inertial>
+								<!-- body full name is marXbot::p1::LTreel::Track::Top -->
+								<collision name="2--Top">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.02500000037252903 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.12000000104308128 0.029999999329447746 0</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="2--Top">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.02500000037252903 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.12000000104308128 0.029999999329447746 0</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- body full name is marXbot::p1::LTreel::Track::Bottom -->
+								<collision name="3--Bottom">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 -0.02500000037252903 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.12000000104308128 0.029999999329447746 0</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="3--Bottom">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 -0.02500000037252903 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.12000000104308128 0.029999999329447746 0</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- body full name is marXbot::p1::LTreel::Track::FrontWheel -->
+								<collision name="4--FrontWheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>-0.06000000052154064 0.0 0.0 1.5707499980926514 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="4--FrontWheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>-0.06000000052154064 0.0 0.0 1.5707499980926514 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- body full name is marXbot::p1::LTreel::Track::BackWheel -->
+								<collision name="5--BackWheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.06000000052154064 0.0 0.0 1.5707499980926514 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="5--BackWheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.06000000052154064 0.0 0.0 1.5707499980926514 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+						</link>	
+						<!-- End of links of part "marXbot::p1::LTreel" -->
+						
+						<!-- Start of joints of part "marXbot::p1::LTreel" -->
+						<!-- End of joints of part "marXbot::p1::LTreel" -->
+						
+						<!-- Start of fixed connections of part "marXbot::p1::LTreel" -->
+						
+						<!-- End of fixed connections of part "marXbot::p1::LTreel" -->
+					<!-- End of declarations for part "marXbot::p1::LTreel" -->
+					<!-- Start of declarations for part "marXbot::p1::RTreel" -->
+						<!-- Start of parts of part "marXbot::p1::RTreel" -->
+						<!-- End of parts of part "marXbot::p1::RTreel" -->
+						
+						<!-- Start of links of part "marXbot::p1::RTreel" -->
+						<!-- link full name is marXbot::p1::RTreel::Wheel -->
+						<link name="3-Wheel">
+								<pose>0.0 -0.05999999865889549 0.02500000037252903 1.5707499980926514 -0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>1.0</mass>
+								</inertial>
+								<!-- body full name is marXbot::p1::RTreel::Wheel::Wheel -->
+								<collision name="6--Wheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.025025001541152614</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="6--Wheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.025025001541152614</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+						</link>	
+						<!-- link full name is marXbot::p1::RTreel::Track -->
+						<link name="4-Track">
+								<pose>0.0 -0.029999999329447746 0.02500000037252903 0.0 0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>1.0</mass>
+								</inertial>
+								<!-- body full name is marXbot::p1::RTreel::Track::Top -->
+								<collision name="7--Top">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.02500000037252903 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.12000000104308128 0.029999999329447746 0</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="7--Top">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.02500000037252903 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.12000000104308128 0.029999999329447746 0</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- body full name is marXbot::p1::RTreel::Track::Bottom -->
+								<collision name="8--Bottom">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 -0.02500000037252903 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.12000000104308128 0.029999999329447746 0</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="8--Bottom">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 -0.02500000037252903 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.12000000104308128 0.029999999329447746 0</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- body full name is marXbot::p1::RTreel::Track::FrontWheel -->
+								<collision name="9--FrontWheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>-0.06000000052154064 0.0 0.0 1.5707499980926514 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="9--FrontWheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>-0.06000000052154064 0.0 0.0 1.5707499980926514 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- body full name is marXbot::p1::RTreel::Track::BackWheel -->
+								<collision name="10--BackWheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.06000000052154064 0.0 0.0 1.5707499980926514 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="10--BackWheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.06000000052154064 0.0 0.0 1.5707499980926514 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+						</link>	
+						<!-- End of links of part "marXbot::p1::RTreel" -->
+						
+						<!-- Start of joints of part "marXbot::p1::RTreel" -->
+						<!-- End of joints of part "marXbot::p1::RTreel" -->
+						
+						<!-- Start of fixed connections of part "marXbot::p1::RTreel" -->
+						
+						<!-- End of fixed connections of part "marXbot::p1::RTreel" -->
+					<!-- End of declarations for part "marXbot::p1::RTreel" -->
+					<!-- End of parts of part "marXbot::p1" -->
+					
+					<!-- Start of links of part "marXbot::p1" -->
+					<!-- link full name is marXbot::p1::Core -->
+					<link name="5-Core">
+							<pose>0.0 0.0 0.057500001043081284 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is marXbot::p1::Core::Spine -->
+							<collision name="11--Spine">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 -0.02250000089406967 0.0 0.0 1.5707499980926514</pose>
+								<geometry>
+									<box> 
+										<size>0.029999999329447746 0.1599999964237213 0.03999999910593033</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="11--Spine">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 -0.02250000089406967 0.0 0.0 1.5707499980926514</pose>
+								<geometry>
+									<box> 
+										<size>0.029999999329447746 0.1599999964237213 0.03999999910593033</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- body full name is marXbot::p1::Core::Frame -->
+							<collision name="12--Frame">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.08500000089406967</radius>
+										<length>0.004999999888241291</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="12--Frame">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.08500000089406967</radius>
+										<length>0.004999999888241291</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::0 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::0" type="ray">
+								<pose>0.0 0.0 0.0 -0.0 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::1 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::1" type="ray">
+								<pose>0.0 0.0 0.0 -0.2617916663487752 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::2 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::2" type="ray">
+								<pose>0.0 0.0 0.0 -0.5235833326975504 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::3 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::3" type="ray">
+								<pose>0.0 0.0 0.0 -0.7853749990463258 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::4 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::4" type="ray">
+								<pose>0.0 0.0 0.0 -1.0471666653951008 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::5 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::5" type="ray">
+								<pose>0.0 0.0 0.0 -1.3089583317438762 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::6 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::6" type="ray">
+								<pose>0.0 0.0 0.0 -1.5707499980926514 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::7 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::7" type="ray">
+								<pose>0.0 0.0 0.0 -1.8325416644414265 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::8 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::8" type="ray">
+								<pose>0.0 0.0 0.0 -2.094333330790202 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::9 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::9" type="ray">
+								<pose>0.0 0.0 0.0 -2.356124997138977 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::10 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::10" type="ray">
+								<pose>0.0 0.0 0.0 -2.6179166634877524 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::11 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::11" type="ray">
+								<pose>0.0 0.0 0.0 -2.8797083298365274 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::12 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::12" type="ray">
+								<pose>0.0 0.0 0.0 -3.1414999961853027 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::13 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::13" type="ray">
+								<pose>0.0 0.0 0.0 2.8798936446455086 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::14 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::14" type="ray">
+								<pose>0.0 0.0 0.0 2.6181019782967336 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::15 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::15" type="ray">
+								<pose>0.0 0.0 0.0 2.356310311947958 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::16 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::16" type="ray">
+								<pose>0.0 0.0 0.0 2.0945186455991833 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::17 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::17" type="ray">
+								<pose>0.0 0.0 0.0 1.8327269792504075 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::18 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::18" type="ray">
+								<pose>0.0 0.0 0.0 1.5709353129016326 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::19 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::19" type="ray">
+								<pose>0.0 0.0 0.0 1.3091436465528574 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::20 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::20" type="ray">
+								<pose>0.0 0.0 0.0 1.0473519802040816 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::21 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::21" type="ray">
+								<pose>0.0 0.0 0.0 0.7855603138553067 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::22 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::22" type="ray">
+								<pose>0.0 0.0 0.0 0.5237686475065317 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity::23 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is Proximity -->
+							<sensor name="Proximity::23" type="ray">
+								<pose>0.0 0.0 0.0 0.2619769811577559 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+					</link>	
+					<!-- End of links of part "marXbot::p1" -->
+					
+					<!-- Start of joints of part "marXbot::p1" -->
+					<!-- Full name of joint: marXbot::p1::Core::LHinge from marXbot::p1::Core to marXbot::p1::LTreel::Wheel-->
+					<joint name="6-LHinge" type="revolute">
+						<pose>0.0 1.3879983906672777E-6 -0.029999999297511393 1.5709353129016326 -0.0 0.0</pose>
+						<parent>5-Core</parent>
+						<child>1-Wheel</child>
+						<!-- WARNING: The SDF generator relies on annotations of the joint 6-LHinge to specify in SDF aspects of the joint that are
+							 accounted for in the equations. -->
+						<axis>
+							<initial_position>3.1414999961853027</initial_position>
+							<xyz>0 1 0</xyz>
+							<dynamics>
+								<damping>0.0</damping>
+								<friction>0.0</friction>
+								<spring_reference>0.0</spring_reference>
+								<spring_stiffness>0.0</spring_stiffness>
+							</dynamics>
+							<limit>
+								<lower>-1.0000000272564224E16</lower>
+								<upper>1.0000000272564224E16</upper>
+								<effort>-1.0</effort>
+								<velocity>-1.0</velocity>
+								<stiffness>1.0E8</stiffness>
+								<dissipation>1.0</dissipation>
+							</limit>
+						</axis>
+						<!-- WARNING: Annotation not found for the actuator LMotor. RoboSim actuators have no explicit counterparts in SDF, 
+							 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+							 please add an appropriate annotation to the actuator. -->
+					</joint>
+					<!-- Full name of joint: marXbot::p1::Core::RHinge from marXbot::p1::Core to marXbot::p1::RTreel::Wheel-->
+					<joint name="7-RHinge" type="revolute">
+						<pose>0.0 1.391723680937984E-6 -0.02999999929716622 -1.5707499980926514 -0.0 0.0</pose>
+						<parent>5-Core</parent>
+						<child>3-Wheel</child>
+						<!-- WARNING: The SDF generator relies on annotations of the joint 7-RHinge to specify in SDF aspects of the joint that are
+							 accounted for in the equations. -->
+						<axis>
+							<initial_position>3.1414999961853027</initial_position>
+							<xyz>0 -1 0</xyz>
+							<dynamics>
+								<damping>0.0</damping>
+								<friction>0.0</friction>
+								<spring_reference>0.0</spring_reference>
+								<spring_stiffness>0.0</spring_stiffness>
+							</dynamics>
+							<limit>
+								<lower>-1.0000000272564224E16</lower>
+								<upper>1.0000000272564224E16</upper>
+								<effort>-1.0</effort>
+								<velocity>-1.0</velocity>
+								<stiffness>1.0E8</stiffness>
+								<dissipation>1.0</dissipation>
+							</limit>
+						</axis>
+						<!-- WARNING: Annotation not found for the actuator RMotor. RoboSim actuators have no explicit counterparts in SDF, 
+							 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+							 please add an appropriate annotation to the actuator. -->
+					</joint>
+					<!-- End of joints of part "marXbot::p1" -->
+					
+					<!-- Start of fixed connections of part "marXbot::p1" -->
+					<!-- fixed joint full name is marXbot::p1::Core::fixedJoint::marXbot::p2::Core from marXbot::p1::Core to marXbot::p2::Core -->
+					<joint name="9-fixedJoint" type="fixed">
+						<parent>5-Core</parent>
+						<child>8-Core</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					
+					<!-- fixed joint full name is marXbot::p1::Core::fixedJoint::marXbot::p1::LTreel::Track from marXbot::p1::Core to marXbot::p1::LTreel::Track -->
+					<joint name="10-fixedJoint" type="fixed">
+						<parent>5-Core</parent>
+						<child>2-Track</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- fixed joint full name is marXbot::p1::Core::fixedJoint::marXbot::p1::RTreel::Track from marXbot::p1::Core to marXbot::p1::RTreel::Track -->
+					<joint name="11-fixedJoint" type="fixed">
+						<parent>5-Core</parent>
+						<child>4-Track</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- End of fixed connections of part "marXbot::p1" -->
+				<!-- End of declarations for part "marXbot::p1" -->
+				<!-- Start of declarations for part "marXbot::p2" -->
+					<!-- Start of parts of part "marXbot::p2" -->
+					<!-- End of parts of part "marXbot::p2" -->
+					
+					<!-- Start of links of part "marXbot::p2" -->
+					<!-- link full name is marXbot::p2::Core -->
+					<link name="8-Core">
+							<pose>0.0 0.0 0.0625 0.0 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>0.009999999776482582</mass>
+							</inertial>
+							<!-- body full name is marXbot::p2::Core::Frame -->
+							<collision name="13--Frame">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.08500000089406967</radius>
+										<length>0.004999999888241291</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="13--Frame">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.08500000089406967</radius>
+										<length>0.004999999888241291</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor::0 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor::0" type="ray">
+								<pose>0.0 0.0 0.0 -0.0 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor::1 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor::1" type="ray">
+								<pose>0.0 0.0 0.0 -0.7853749990463258 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor::2 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor::2" type="ray">
+								<pose>0.0 0.0 0.0 -1.5707499980926514 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor::3 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor::3" type="ray">
+								<pose>0.0 0.0 0.0 -2.356124997138977 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor::4 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor::4" type="ray">
+								<pose>0.0 0.0 0.0 -3.1414999961853027 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor::5 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor::5" type="ray">
+								<pose>0.0 0.0 0.0 2.356310311947958 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor::6 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor::6" type="ray">
+								<pose>0.0 0.0 0.0 1.5709353129016326 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor::7 to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor::7" type="ray">
+								<pose>0.0 0.0 0.0 0.7855603138553067 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: Annotation not found for the actuator LeftLED::0. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator LeftLED::1. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator LeftLED::2. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator LeftLED::3. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator LeftLED::4. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator LeftLED::5. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator LeftLED::6. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator LeftLED::7. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator RightLED::0. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator RightLED::1. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator RightLED::2. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator RightLED::3. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator RightLED::4. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator RightLED::5. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator RightLED::6. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+							<!-- WARNING: Annotation not found for the actuator RightLED::7. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+					</link>	
+					<!-- End of links of part "marXbot::p2" -->
+					
+					<!-- Start of joints of part "marXbot::p2" -->
+					<!-- End of joints of part "marXbot::p2" -->
+					
+					<!-- Start of fixed connections of part "marXbot::p2" -->
+					<!-- fixed joint full name is marXbot::p2::Core::fixedJoint::marXbot::p3::Base from marXbot::p2::Core to marXbot::p3::Base -->
+					<joint name="13-fixedJoint" type="fixed">
+						<parent>8-Core</parent>
+						<child>12-Base</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					
+					<!-- End of fixed connections of part "marXbot::p2" -->
+				<!-- End of declarations for part "marXbot::p2" -->
+				<!-- Start of declarations for part "marXbot::p3" -->
+					<!-- Start of parts of part "marXbot::p3" -->
+					<!-- Start of declarations for part "marXbot::p3::longrange::0" -->
+						<!-- Start of parts of part "marXbot::p3::longrange::0" -->
+						<!-- End of parts of part "marXbot::p3::longrange::0" -->
+						
+						<!-- Start of links of part "marXbot::p3::longrange::0" -->
+						<!-- link full name is marXbot::p3::longrange::0::BBody -->
+						<link name="14-BBody">
+								<pose>0.0 0.0 0.07099999859929085 0.0 -0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>0.0010000000474974513</mass>
+								</inertial>
+								<!-- body full name is marXbot::p3::longrange::0::BBody::Box -->
+								<collision name="14--Box">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="14--Box">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor to specify aspects of the 
+								sensor that are accounted for in the equations. -->
+								<!-- sensor simple name is IRSensor -->
+								<sensor name="IRSensor" type="ray">
+									<pose>0.004000000189989805 -0.004000000189989805 0.0 -0.0 1.57079632679 0.0</pose>
+									<visualize>true</visualize>
+									<always_on>true</always_on>
+									<update_rate>1</update_rate>
+									<ray>
+										<scan>
+											<horizontal>
+												<samples>1</samples>
+												<resolution>1.0</resolution>
+											</horizontal>
+											<vertical>
+												<samples>1</samples>
+												<resolution>1.0</resolution>
+											</vertical>
+										</scan>
+										<range>
+											<min>0.0</min>
+											<max>0.10000000149011612</max>
+										</range>
+									</ray>
+								</sensor>
+								<!-- WARNING: Annotation not found for the actuator LeftLED. RoboSim actuators have no explicit counterparts in SDF, 
+									 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+									 please add an appropriate annotation to the actuator. -->
+						</link>	
+						<!-- End of links of part "marXbot::p3::longrange::0" -->
+						
+						<!-- Start of joints of part "marXbot::p3::longrange::0" -->
+						<!-- End of joints of part "marXbot::p3::longrange::0" -->
+						
+						<!-- Start of fixed connections of part "marXbot::p3::longrange::0" -->
+						
+						<!-- End of fixed connections of part "marXbot::p3::longrange::0" -->
+					<!-- End of declarations for part "marXbot::p3::longrange::0" -->
+					<!-- Start of declarations for part "marXbot::p3::longrange::1" -->
+						<!-- Start of parts of part "marXbot::p3::longrange::1" -->
+						<!-- End of parts of part "marXbot::p3::longrange::1" -->
+						
+						<!-- Start of links of part "marXbot::p3::longrange::1" -->
+						<!-- link full name is marXbot::p3::longrange::1::BBody -->
+						<link name="15-BBody">
+								<pose>0.0 0.0 0.07099999859929085 0.0 -0.0 1.5707499980926514</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>0.0010000000474974513</mass>
+								</inertial>
+								<!-- body full name is marXbot::p3::longrange::1::BBody::Box -->
+								<collision name="15--Box">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="15--Box">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor to specify aspects of the 
+								sensor that are accounted for in the equations. -->
+								<!-- sensor simple name is IRSensor -->
+								<sensor name="IRSensor" type="ray">
+									<pose>0.004000000189989805 -0.004000000189989805 0.0 -0.0 1.57079632679 0.0</pose>
+									<visualize>true</visualize>
+									<always_on>true</always_on>
+									<update_rate>1</update_rate>
+									<ray>
+										<scan>
+											<horizontal>
+												<samples>1</samples>
+												<resolution>1.0</resolution>
+											</horizontal>
+											<vertical>
+												<samples>1</samples>
+												<resolution>1.0</resolution>
+											</vertical>
+										</scan>
+										<range>
+											<min>0.0</min>
+											<max>0.10000000149011612</max>
+										</range>
+									</ray>
+								</sensor>
+								<!-- WARNING: Annotation not found for the actuator LeftLED. RoboSim actuators have no explicit counterparts in SDF, 
+									 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+									 please add an appropriate annotation to the actuator. -->
+						</link>	
+						<!-- End of links of part "marXbot::p3::longrange::1" -->
+						
+						<!-- Start of joints of part "marXbot::p3::longrange::1" -->
+						<!-- End of joints of part "marXbot::p3::longrange::1" -->
+						
+						<!-- Start of fixed connections of part "marXbot::p3::longrange::1" -->
+						
+						<!-- End of fixed connections of part "marXbot::p3::longrange::1" -->
+					<!-- End of declarations for part "marXbot::p3::longrange::1" -->
+					<!-- Start of declarations for part "marXbot::p3::longrange::2" -->
+						<!-- Start of parts of part "marXbot::p3::longrange::2" -->
+						<!-- End of parts of part "marXbot::p3::longrange::2" -->
+						
+						<!-- Start of links of part "marXbot::p3::longrange::2" -->
+						<!-- link full name is marXbot::p3::longrange::2::BBody -->
+						<link name="16-BBody">
+								<pose>0.0 0.0 0.07099999859929085 0.0 -0.0 3.1414999961853027</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>0.0010000000474974513</mass>
+								</inertial>
+								<!-- body full name is marXbot::p3::longrange::2::BBody::Box -->
+								<collision name="16--Box">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="16--Box">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor to specify aspects of the 
+								sensor that are accounted for in the equations. -->
+								<!-- sensor simple name is IRSensor -->
+								<sensor name="IRSensor" type="ray">
+									<pose>0.004000000189989805 -0.004000000189989805 0.0 -0.0 1.57079632679 0.0</pose>
+									<visualize>true</visualize>
+									<always_on>true</always_on>
+									<update_rate>1</update_rate>
+									<ray>
+										<scan>
+											<horizontal>
+												<samples>1</samples>
+												<resolution>1.0</resolution>
+											</horizontal>
+											<vertical>
+												<samples>1</samples>
+												<resolution>1.0</resolution>
+											</vertical>
+										</scan>
+										<range>
+											<min>0.0</min>
+											<max>0.10000000149011612</max>
+										</range>
+									</ray>
+								</sensor>
+								<!-- WARNING: Annotation not found for the actuator LeftLED. RoboSim actuators have no explicit counterparts in SDF, 
+									 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+									 please add an appropriate annotation to the actuator. -->
+						</link>	
+						<!-- End of links of part "marXbot::p3::longrange::2" -->
+						
+						<!-- Start of joints of part "marXbot::p3::longrange::2" -->
+						<!-- End of joints of part "marXbot::p3::longrange::2" -->
+						
+						<!-- Start of fixed connections of part "marXbot::p3::longrange::2" -->
+						
+						<!-- End of fixed connections of part "marXbot::p3::longrange::2" -->
+					<!-- End of declarations for part "marXbot::p3::longrange::2" -->
+					<!-- Start of declarations for part "marXbot::p3::longrange::3" -->
+						<!-- Start of parts of part "marXbot::p3::longrange::3" -->
+						<!-- End of parts of part "marXbot::p3::longrange::3" -->
+						
+						<!-- Start of links of part "marXbot::p3::longrange::3" -->
+						<!-- link full name is marXbot::p3::longrange::3::BBody -->
+						<link name="17-BBody">
+								<pose>0.0 0.0 0.07099999859929085 0.0 -0.0 -1.5709353129016326</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>0.0010000000474974513</mass>
+								</inertial>
+								<!-- body full name is marXbot::p3::longrange::3::BBody::Box -->
+								<collision name="17--Box">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="17--Box">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<box> 
+											<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+										</box>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+								<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor to specify aspects of the 
+								sensor that are accounted for in the equations. -->
+								<!-- sensor simple name is IRSensor -->
+								<sensor name="IRSensor" type="ray">
+									<pose>0.004000000189989805 -0.004000000189989805 0.0 -0.0 1.57079632679 0.0</pose>
+									<visualize>true</visualize>
+									<always_on>true</always_on>
+									<update_rate>1</update_rate>
+									<ray>
+										<scan>
+											<horizontal>
+												<samples>1</samples>
+												<resolution>1.0</resolution>
+											</horizontal>
+											<vertical>
+												<samples>1</samples>
+												<resolution>1.0</resolution>
+											</vertical>
+										</scan>
+										<range>
+											<min>0.0</min>
+											<max>0.10000000149011612</max>
+										</range>
+									</ray>
+								</sensor>
+								<!-- WARNING: Annotation not found for the actuator LeftLED. RoboSim actuators have no explicit counterparts in SDF, 
+									 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+									 please add an appropriate annotation to the actuator. -->
+						</link>	
+						<!-- End of links of part "marXbot::p3::longrange::3" -->
+						
+						<!-- Start of joints of part "marXbot::p3::longrange::3" -->
+						<!-- End of joints of part "marXbot::p3::longrange::3" -->
+						
+						<!-- Start of fixed connections of part "marXbot::p3::longrange::3" -->
+						
+						<!-- End of fixed connections of part "marXbot::p3::longrange::3" -->
+					<!-- End of declarations for part "marXbot::p3::longrange::3" -->
+					<!-- End of parts of part "marXbot::p3" -->
+					
+					<!-- Start of links of part "marXbot::p3" -->
+					<!-- link full name is marXbot::p3::Base -->
+					<link name="12-Base">
+							<pose>0.0 0.0 0.06549999862909317 0.0 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>0.009999999776482582</mass>
+							</inertial>
+							<!-- body full name is marXbot::p3::Base::Frame -->
+							<collision name="18--Frame">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.06499999761581421</radius>
+										<length>0.0010000000474974513</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="18--Frame">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.06499999761581421</radius>
+										<length>0.0010000000474974513</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- link full name is marXbot::p3::Core -->
+					<link name="18-Core">
+							<pose>0.0 0.0 0.07099999859929085 0.0 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is marXbot::p3::Core::Spine -->
+							<collision name="19--Spine">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.03999999910593033</radius>
+										<length>0.009999999776482582</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="19--Spine">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.03999999910593033</radius>
+										<length>0.009999999776482582</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- body full name is marXbot::p3::Core::Top -->
+							<collision name="20--Top">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.005499999970197678 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.08500000089406967</radius>
+										<length>0.0010000000474974513</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="20--Top">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.005499999970197678 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.08500000089406967</radius>
+										<length>0.0010000000474974513</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "marXbot::p3" -->
+					
+					<!-- Start of joints of part "marXbot::p3" -->
+					<!-- Full name of joint: marXbot::p3::Base::rj from marXbot::p3::Base to marXbot::p3::Core-->
+					<joint name="19-rj" type="revolute">
+						<pose>0.0 0.0 -0.005499999970197678 0.0 -0.0 0.0</pose>
+						<parent>12-Base</parent>
+						<child>18-Core</child>
+						<!-- WARNING: The SDF generator relies on annotations of the joint 19-rj to specify in SDF aspects of the joint that are
+							 accounted for in the equations. -->
+						<axis>
+							<xyz>0 0 1</xyz>
+						</axis>
+					</joint>
+					<!-- End of joints of part "marXbot::p3" -->
+					
+					<!-- Start of fixed connections of part "marXbot::p3" -->
+					
+					<!-- fixed joint full name is marXbot::p3::Core::fixedJoint::marXbot::p3::longrange::1::BBody from marXbot::p3::Core to marXbot::p3::longrange::1::BBody -->
+					<joint name="20-fixedJoint" type="fixed">
+						<parent>18-Core</parent>
+						<child>15-BBody</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- fixed joint full name is marXbot::p3::Core::fixedJoint::marXbot::p3::longrange::0::BBody from marXbot::p3::Core to marXbot::p3::longrange::0::BBody -->
+					<joint name="21-fixedJoint" type="fixed">
+						<parent>18-Core</parent>
+						<child>14-BBody</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- fixed joint full name is marXbot::p3::Core::fixedJoint::marXbot::p3::longrange::3::BBody from marXbot::p3::Core to marXbot::p3::longrange::3::BBody -->
+					<joint name="22-fixedJoint" type="fixed">
+						<parent>18-Core</parent>
+						<child>17-BBody</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- fixed joint full name is marXbot::p3::Core::fixedJoint::marXbot::p3::longrange::2::BBody from marXbot::p3::Core to marXbot::p3::longrange::2::BBody -->
+					<joint name="23-fixedJoint" type="fixed">
+						<parent>18-Core</parent>
+						<child>16-BBody</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- End of fixed connections of part "marXbot::p3" -->
+				<!-- End of declarations for part "marXbot::p3" -->
+			<!-- End of parts of the pmodel marXbot -->
+			
+			<!-- Start of links of the pmodel marXbot -->
+			<!-- End of links of the pmodel marXbot -->
+			
+			<!-- Start of joints of the pmodel marXbot -->
+			<!-- End of joints of the pmodel marXbot -->
+			
+			<!-- Start of fixed connections of the pmodel marXbot -->
+			<!-- End of fixed connections of the pmodel marXbot -->
+		</model>
+</sdf>

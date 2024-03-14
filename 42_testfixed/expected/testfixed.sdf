@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testfixed">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testfixed -->
+			<!-- End of parts of the pmodel testfixed -->
+			
+			<!-- Start of links of the pmodel testfixed -->
+			<!-- link full name is testfixed::linkB -->
+			<link name="1-linkB">
+					<pose>0.0 -0.5 0.5 1.0471999645233154 -0.785398006439209 1.0471999645233154</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- link full name is testfixed::linkA::0 -->
+			<link name="2-linkA">
+					<pose>0.0 0.5 0.5 1.5707999467849731 3.141590118408203 -1.0471999645233154</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- link full name is testfixed::linkA::1 -->
+			<link name="3-linkA">
+					<pose>1.0 0.5 0.5 1.5707999467849731 3.141590118408203 -1.0471999645233154</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- End of links of the pmodel testfixed -->
+			
+			<!-- Start of joints of the pmodel testfixed -->
+			<!-- End of joints of the pmodel testfixed -->
+			
+			<!-- Start of fixed connections of the pmodel testfixed -->
+			<!-- fixed joint full name is testfixed::linkA::1::fixedJoint::testfixed::linkB from testfixed::linkA::1 to testfixed::linkB -->
+			<joint name="4-fixedJoint" type="fixed">
+				<parent>3-linkA</parent>
+				<child>1-linkB</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- fixed joint full name is testfixed::linkA::0::fixedJoint::testfixed::linkB from testfixed::linkA::0 to testfixed::linkB -->
+			<joint name="5-fixedJoint" type="fixed">
+				<parent>2-linkA</parent>
+				<child>1-linkB</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- End of fixed connections of the pmodel testfixed -->
+		</model>
+</sdf>

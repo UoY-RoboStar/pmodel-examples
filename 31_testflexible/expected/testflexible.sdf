@@ -1,0 +1,175 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testflexible">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testflexible -->
+			<!-- End of parts of the pmodel testflexible -->
+			
+			<!-- Start of links of the pmodel testflexible -->
+			<!-- link full name is testflexible::linkA -->
+			<link name="1-linkA">
+					<pose>1.0 0.5 0.5 1.5707999467849731 3.141590118408203 -1.0471999645233154</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is testflexible::linkA::bodyA -->
+					<collision name="1--bodyA">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>1.0 1.0 1.0</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--bodyA">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>1.0 1.0 1.0</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is testflexible::linkB -->
+			<link name="2-linkB">
+					<pose>0.0 -0.5 0.5 1.0471999645233154 -0.785398006439209 1.0471999645233154</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is testflexible::linkB::bodyB -->
+					<collision name="2--bodyB">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>1.0 1.0 1.0</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="2--bodyB">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>1.0 1.0 1.0</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel testflexible -->
+			
+			<!-- Start of joints of the pmodel testflexible -->
+			<!-- Full name of joint: testflexible::linkA::barAB_joint from testflexible::linkA to testflexible::linkB-->
+			<joint name="3-barAB_joint" type="revolute">
+				<pose>1.3194802449309406 -0.7133449413870152 0.010805127438912598 1.4116393602331174 -0.1271754252421001 -0.9054183365313953</pose>
+				<parent>1-linkA</parent>
+				<child>2-linkB</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 3-barAB_joint to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- End of joints of the pmodel testflexible -->
+			
+			<!-- Start of fixed connections of the pmodel testflexible -->
+			<!-- End of fixed connections of the pmodel testflexible -->
+		</model>
+</sdf>

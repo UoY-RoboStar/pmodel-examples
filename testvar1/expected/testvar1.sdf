@@ -1,0 +1,86 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testvar1">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testvar1 -->
+				<!-- Start of declarations for part "testvar1::RTREEL" -->
+					<!-- Start of parts of part "testvar1::RTREEL" -->
+					<!-- End of parts of part "testvar1::RTREEL" -->
+					
+					<!-- Start of links of part "testvar1::RTREEL" -->
+					<!-- link full name is testvar1::RTREEL::Wheel -->
+					<link name="1-Wheel">
+							<pose>0.0 -0.05999999865889549 0.02500000037252903 1.5707499980926514 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+					</link>	
+					<!-- link full name is testvar1::RTREEL::Track -->
+					<link name="2-Track">
+							<pose>0.0 -0.029999999329447746 0.02500000037252903 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+					</link>	
+					<!-- End of links of part "testvar1::RTREEL" -->
+					
+					<!-- Start of joints of part "testvar1::RTREEL" -->
+					<!-- End of joints of part "testvar1::RTREEL" -->
+					
+					<!-- Start of fixed connections of part "testvar1::RTREEL" -->
+					
+					<!-- End of fixed connections of part "testvar1::RTREEL" -->
+				<!-- End of declarations for part "testvar1::RTREEL" -->
+			<!-- End of parts of the pmodel testvar1 -->
+			
+			<!-- Start of links of the pmodel testvar1 -->
+			<!-- link full name is testvar1::Core -->
+			<link name="3-Core">
+					<pose>0.0 0.0 0.057500001043081284 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- End of links of the pmodel testvar1 -->
+			
+			<!-- Start of joints of the pmodel testvar1 -->
+			<!-- End of joints of the pmodel testvar1 -->
+			
+			<!-- Start of fixed connections of the pmodel testvar1 -->
+			<!-- fixed joint full name is testvar1::Core::fixedJoint::testvar1::RTREEL::Track from testvar1::Core to testvar1::RTREEL::Track -->
+			<joint name="4-fixedJoint" type="fixed">
+				<parent>3-Core</parent>
+				<child>2-Track</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- End of fixed connections of the pmodel testvar1 -->
+		</model>
+</sdf>

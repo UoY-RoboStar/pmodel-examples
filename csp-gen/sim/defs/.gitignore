@@ -1,0 +1,17 @@
+/core_defs.csp
+/core_timed_defs.csp
+/function_toolkit_defs.csp
+/relation_toolkit_defs.csp
+/robochart_defs.csp
+/sequence_toolkit_defs.csp
+/set_toolkit_defs.csp
+/state_defs.csp
+/state_timed_defs.csp
+/Movement.csp
+/Simulation.csp
+/Simulation_SMovement.csp
+/Simulation_SMovement_coreassertions.csp
+/Simulation_defs.csp
+/file_marXbotSoftware.csp
+/file_marXbotSoftware_defs.csp
+/marXbotSoftware.csp

@@ -1,0 +1,163 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="BodySensorIndex">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel BodySensorIndex -->
+			<!-- End of parts of the pmodel BodySensorIndex -->
+			
+			<!-- Start of links of the pmodel BodySensorIndex -->
+			<!-- link full name is BodySensorIndex::Tip -->
+			<link name="1-Tip">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is BodySensorIndex::Tip::my_body -->
+					<collision name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.05000000074505806</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.05000000074505806</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: Annotation not found for the sensor my_sensor::0. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::1. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::2. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::3. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::4. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::5. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::6. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::7. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::8. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::9. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::10. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::11. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::12. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::13. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::14. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::15. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::16. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::17. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::18. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::19. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::20. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::21. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::22. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+					<!-- WARNING: Annotation not found for the sensor my_sensor::23. The SDF generator relies on annotations to specify aspects of the 
+					  	 sensor that are accounted for in the equations. --> If you wish to reflect these aspects in SDF,
+					     please add an appropriate annotation to the sensor. --> 
+			</link>	
+			<!-- End of links of the pmodel BodySensorIndex -->
+			
+			<!-- Start of joints of the pmodel BodySensorIndex -->
+			<!-- End of joints of the pmodel BodySensorIndex -->
+			
+			<!-- Start of fixed connections of the pmodel BodySensorIndex -->
+			<!-- End of fixed connections of the pmodel BodySensorIndex -->
+		</model>
+</sdf>

@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testSensorVar">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testSensorVar -->
+			<!-- End of parts of the pmodel testSensorVar -->
+			
+			<!-- Start of links of the pmodel testSensorVar -->
+			<!-- link full name is testSensorVar::L -->
+			<link name="1-L">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor MyIMU to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is MyIMU -->
+					<sensor name="MyIMU" type="imu">
+						<pose>0.0 0.0 0.0 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<update_rate>3.0</update_rate>
+					</sensor>
+			</link>	
+			<!-- End of links of the pmodel testSensorVar -->
+			
+			<!-- Start of joints of the pmodel testSensorVar -->
+			<!-- End of joints of the pmodel testSensorVar -->
+			
+			<!-- Start of fixed connections of the pmodel testSensorVar -->
+			<!-- End of fixed connections of the pmodel testSensorVar -->
+		</model>
+</sdf>

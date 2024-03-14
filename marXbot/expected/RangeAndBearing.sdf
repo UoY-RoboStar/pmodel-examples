@@ -1,0 +1,325 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="RangeAndBearing">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel RangeAndBearing -->
+			<!-- End of parts of the pmodel RangeAndBearing -->
+			
+			<!-- Start of links of the pmodel RangeAndBearing -->
+			<!-- link full name is RangeAndBearing::Core -->
+			<link name="1-Core">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>0.009999999776482582</mass>
+					</inertial>
+					<!-- body full name is RangeAndBearing::Core::Frame -->
+					<collision name="1--Frame">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.08500000089406967</radius>
+								<length>0.004999999888241291</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--Frame">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.08500000089406967</radius>
+								<length>0.004999999888241291</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor::0" type="ray">
+						<pose>0.08500000089406967 0.0 0.0 0.0 0.0 0.0</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor::1" type="ray">
+						<pose>0.060105469288877895 0.06010268474498956 0.0 0.0 0.0 0.7853749990463257</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor::2" type="ray">
+						<pose>3.9379397308588126E-6 0.08500000080284985 0.0 0.0 0.0 1.5707499980926514</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor::3" type="ray">
+						<pose>-0.0600999000720999 0.06010825370375895 0.0 0.0 0.0 2.356124997138977</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor::4" type="ray">
+						<pose>-0.08500000052919039 7.875879453265434E-6 0.0 0.0 0.0 3.1414999961853027</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor::5" type="ray">
+						<pose>-0.06011103798962673 -0.060097115270214906 0.0 0.0 0.0 3.9268749952316284</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor::6" type="ray">
+						<pose>-1.1813819158767672E-5 -0.0850000000730913 0.0 0.0 0.0 4.712249994277954</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor::7" type="ray">
+						<pose>0.06009433033934054 -0.06011382214647526 0.0 0.0 0.0 5.49762499332428</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+			</link>	
+			<!-- End of links of the pmodel RangeAndBearing -->
+			
+			<!-- Start of joints of the pmodel RangeAndBearing -->
+			<!-- End of joints of the pmodel RangeAndBearing -->
+			
+			<!-- Start of fixed connections of the pmodel RangeAndBearing -->
+			<!-- End of fixed connections of the pmodel RangeAndBearing -->
+		</model>
+</sdf>

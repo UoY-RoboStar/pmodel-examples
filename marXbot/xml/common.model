@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<physmod:PMPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:physmod="http://www.robocalc.circus/PhysMod" xmlns:robochart="http://www.robocalc.circus/RoboChart" name="common">
+  <constants modifier="CONST">
+    <vars name="PI">
+      <type xsi:type="robochart:TypeRef">
+        <ref xsi:type="robochart:PrimitiveType" href="platform:/plugin/circus.robocalc.robochart.textual/lib/robochart/core.rct#//@types.4"/>
+      </type>
+      <initial xsi:type="robochart:FloatExp" value="3.1415"/>
+    </vars>
+  </constants>
+</physmod:PMPackage>

@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="BodyLightRef">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel BodyLightRef -->
+			<!-- End of parts of the pmodel BodyLightRef -->
+			
+			<!-- Start of links of the pmodel BodyLightRef -->
+			<!-- link full name is BodyLightRef::Tip -->
+			<link name="1-Tip">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is BodyLightRef::Tip::my_body -->
+					<collision name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.05000000074505806</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.05000000074505806</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_light_ref to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_light_ref -->
+					<sensor name="my_light_ref" type="light">
+						<pose>0.0 0.0 0.8999999761581421 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<cast_shadows>true</cast_shadows>
+					</sensor>
+			</link>	
+			<!-- End of links of the pmodel BodyLightRef -->
+			
+			<!-- Start of joints of the pmodel BodyLightRef -->
+			<!-- End of joints of the pmodel BodyLightRef -->
+			
+			<!-- Start of fixed connections of the pmodel BodyLightRef -->
+			<!-- End of fixed connections of the pmodel BodyLightRef -->
+		</model>
+</sdf>

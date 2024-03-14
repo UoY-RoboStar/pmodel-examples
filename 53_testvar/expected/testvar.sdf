@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testvar">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testvar -->
+			<!-- End of parts of the pmodel testvar -->
+			
+			<!-- Start of links of the pmodel testvar -->
+			<!-- link full name is testvar::Core -->
+			<link name="1-Core">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is testvar::Core::Spine -->
+					<collision name="1--Spine">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>-1.0 10.0 6</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--Spine">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>-1.0 10.0 6</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel testvar -->
+			
+			<!-- Start of joints of the pmodel testvar -->
+			<!-- End of joints of the pmodel testvar -->
+			
+			<!-- Start of fixed connections of the pmodel testvar -->
+			<!-- End of fixed connections of the pmodel testvar -->
+		</model>
+</sdf>

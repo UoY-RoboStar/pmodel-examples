@@ -1,0 +1,557 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="VacuumCleaner">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel VacuumCleaner -->
+			<!-- End of parts of the pmodel VacuumCleaner -->
+			
+			<!-- Start of links of the pmodel VacuumCleaner -->
+			<!-- link full name is VacuumCleaner::Cylinder -->
+			<link name="1-Cylinder">
+					<pose>0.0 0.0 0.032499998807907104 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is VacuumCleaner::Cylinder::Cylinder -->
+					<collision name="1--Cylinder">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.05000000074505806</radius>
+								<length>0.004999999888241291</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--Cylinder">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.05000000074505806</radius>
+								<length>0.004999999888241291</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor Proximity to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is Proximity -->
+					<sensor name="Proximity" type="logical_camera">
+						<pose>-0.05000000074505806 0.0 0.029999999329447746 3.141592653589793 -1.5707036693855094 3.141592653589793</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<logical_camera>
+							<near>0.019999999552965164</near>
+							<far>0.30000001192092896</far>
+							<aspect_ratio>0.0</aspect_ratio>
+							<horizontal_fov>0.0</horizontal_fov>
+						</logical_camera>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor acc_left to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is acc_left -->
+					<sensor name="acc_left" type="logical_camera">
+						<pose>0.0 -0.05000000074505806 0.029999999329447746 3.141592653589793 -1.5707036693855094 3.141592653589793</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<logical_camera>
+							<near>0.019999999552965164</near>
+							<far>0.30000001192092896</far>
+							<aspect_ratio>0.0</aspect_ratio>
+							<horizontal_fov>0.0</horizontal_fov>
+						</logical_camera>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor acc_right to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is acc_right -->
+					<sensor name="acc_right" type="logical_camera">
+						<pose>0.0 0.05000000074505806 0.029999999329447746 3.141592653589793 -1.5707036693855094 3.141592653589793</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<logical_camera>
+							<near>0.019999999552965164</near>
+							<far>0.30000001192092896</far>
+							<aspect_ratio>0.0</aspect_ratio>
+							<horizontal_fov>0.0</horizontal_fov>
+						</logical_camera>
+					</sensor>
+			</link>	
+			<!-- link full name is VacuumCleaner::FrontCaster -->
+			<link name="2-FrontCaster">
+					<pose>0.029999999329447746 0.0 0.009999999776482582 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is VacuumCleaner::FrontCaster::FrontCaster -->
+					<collision name="2--FrontCaster">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.009999999776482582</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="2--FrontCaster">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.009999999776482582</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is VacuumCleaner::BackCaster -->
+			<link name="3-BackCaster">
+					<pose>-0.029999999329447746 0.0 0.009999999776482582 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is VacuumCleaner::BackCaster::BackCaster -->
+					<collision name="3--BackCaster">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.009999999776482582</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="3--BackCaster">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.009999999776482582</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is VacuumCleaner::LeftWheel -->
+			<link name="4-LeftWheel">
+					<pose>0.0 0.02250000089406967 0.014000000432133675 1.5700000524520874 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is VacuumCleaner::LeftWheel::LeftWheel -->
+					<collision name="4--LeftWheel">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.014000000432133675</radius>
+								<length>0.004999999888241291</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="4--LeftWheel">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.014000000432133675</radius>
+								<length>0.004999999888241291</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is VacuumCleaner::RightWheel -->
+			<link name="5-RightWheel">
+					<pose>0.0 -0.02250000089406967 0.014000000432133675 1.5700000524520874 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is VacuumCleaner::RightWheel::RightWheel -->
+					<collision name="5--RightWheel">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.014000000432133675</radius>
+								<length>0.004999999888241291</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="5--RightWheel">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.014000000432133675</radius>
+								<length>0.004999999888241291</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is VacuumCleaner::Cuboid -->
+			<link name="6-Cuboid">
+					<pose>0.0 0.0 0.019999999552965164 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is VacuumCleaner::Cuboid::Cuboid -->
+					<collision name="6--Cuboid">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.03999999910593033 0.03999999910593033 0.019999999552965164</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="6--Cuboid">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.03999999910593033 0.03999999910593033 0.019999999552965164</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel VacuumCleaner -->
+			
+			<!-- Start of joints of the pmodel VacuumCleaner -->
+			<!-- Full name of joint: VacuumCleaner::Cylinder::LeftHinge from VacuumCleaner::Cylinder to VacuumCleaner::LeftWheel-->
+			<joint name="7-LeftHinge" type="revolute">
+				<pose>0.0 0.032464156161485895 0.045025866434408174 -1.5700000524520874 -0.0 0.0</pose>
+				<parent>1-Cylinder</parent>
+				<child>4-LeftWheel</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 7-LeftHinge to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 1 0</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: VacuumCleaner::Cylinder::RightHinge from VacuumCleaner::Cylinder to VacuumCleaner::RightWheel-->
+			<joint name="8-RightHinge" type="revolute">
+				<pose>0.0 0.032535820847613216 -0.04497410860949358 -1.5700000524520874 -0.0 0.0</pose>
+				<parent>1-Cylinder</parent>
+				<child>5-RightWheel</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 8-RightHinge to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 1 0</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: VacuumCleaner::Cylinder::FrontSpherical from VacuumCleaner::Cylinder to VacuumCleaner::FrontCaster-->
+			<joint name="9-FrontSpherical" type="revolute">
+				<pose>-0.009999999776482582 0.0 0.032499998807907104 0.0 -0.0 0.0</pose>
+				<parent>1-Cylinder</parent>
+				<child>2-FrontCaster</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 9-FrontSpherical to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 1 0</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: VacuumCleaner::Cylinder::BackSpherical from VacuumCleaner::Cylinder to VacuumCleaner::BackCaster-->
+			<joint name="10-BackSpherical" type="revolute">
+				<pose>0.009999999776482582 0.0 0.032499998807907104 0.0 -0.0 0.0</pose>
+				<parent>1-Cylinder</parent>
+				<child>3-BackCaster</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 10-BackSpherical to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 1 0</xyz>
+				</axis>
+			</joint>
+			<!-- End of joints of the pmodel VacuumCleaner -->
+			
+			<!-- Start of fixed connections of the pmodel VacuumCleaner -->
+			<!-- fixed joint full name is VacuumCleaner::Cuboid::fixedJoint::VacuumCleaner::Cylinder from VacuumCleaner::Cuboid to VacuumCleaner::Cylinder -->
+			<joint name="11-fixedJoint" type="fixed">
+				<parent>6-Cuboid</parent>
+				<child>1-Cylinder</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- End of fixed connections of the pmodel VacuumCleaner -->
+		</model>
+</sdf>

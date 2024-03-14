@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testJointVar">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testJointVar -->
+			<!-- End of parts of the pmodel testJointVar -->
+			
+			<!-- Start of links of the pmodel testJointVar -->
+			<!-- link full name is testJointVar::base_link -->
+			<link name="1-base_link">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- link full name is testJointVar::second_link -->
+			<link name="2-second_link">
+					<pose>0.0 0.0 0.11999999731779099 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- End of links of the pmodel testJointVar -->
+			
+			<!-- Start of joints of the pmodel testJointVar -->
+			<!-- Full name of joint: testJointVar::base_link::my_joint from testJointVar::base_link to testJointVar::second_link-->
+			<joint name="3-my_joint" type="gearbox">
+				<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+				<parent>1-base_link</parent>
+				<child>2-second_link</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 3-my_joint to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<gearbox_ratio>7</gearbox_ratio>
+			</joint>
+			<!-- End of joints of the pmodel testJointVar -->
+			
+			<!-- Start of fixed connections of the pmodel testJointVar -->
+			<!-- End of fixed connections of the pmodel testJointVar -->
+		</model>
+</sdf>

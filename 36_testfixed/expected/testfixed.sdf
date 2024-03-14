@@ -1,0 +1,198 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testfixed">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testfixed -->
+				<!-- Start of declarations for part "testfixed::TLB" -->
+					<!-- Start of parts of part "testfixed::TLB" -->
+					<!-- End of parts of part "testfixed::TLB" -->
+					
+					<!-- Start of links of part "testfixed::TLB" -->
+					<!-- link full name is testfixed::TLB::linkB -->
+					<link name="1-linkB">
+							<pose>0.0 -0.5 0.5 1.0471999645233154 -0.785398006439209 1.0471999645233154</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is testfixed::TLB::linkB::bodyB -->
+							<collision name="1--bodyB">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.0 1.0 1.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="1--bodyB">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.0 1.0 1.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "testfixed::TLB" -->
+					
+					<!-- Start of joints of part "testfixed::TLB" -->
+					<!-- End of joints of part "testfixed::TLB" -->
+					
+					<!-- Start of fixed connections of part "testfixed::TLB" -->
+					
+					<!-- End of fixed connections of part "testfixed::TLB" -->
+				<!-- End of declarations for part "testfixed::TLB" -->
+				<!-- Start of declarations for part "testfixed::TLA" -->
+					<!-- Start of parts of part "testfixed::TLA" -->
+					<!-- End of parts of part "testfixed::TLA" -->
+					
+					<!-- Start of links of part "testfixed::TLA" -->
+					<!-- link full name is testfixed::TLA::linkA -->
+					<link name="2-linkA">
+							<pose>1.0 0.5 0.5 1.5707999467849731 3.141590118408203 -1.0471999645233154</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is testfixed::TLA::linkA::bodyA -->
+							<collision name="2--bodyA">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.0 1.0 1.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="2--bodyA">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.0 1.0 1.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "testfixed::TLA" -->
+					
+					<!-- Start of joints of part "testfixed::TLA" -->
+					<!-- End of joints of part "testfixed::TLA" -->
+					
+					<!-- Start of fixed connections of part "testfixed::TLA" -->
+					<!-- fixed joint full name is testfixed::TLA::linkA::fixedJoint::testfixed::TLB::linkB from testfixed::TLA::linkA to testfixed::TLB::linkB -->
+					<joint name="3-fixedJoint" type="fixed">
+						<parent>2-linkA</parent>
+						<child>1-linkB</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					
+					<!-- End of fixed connections of part "testfixed::TLA" -->
+				<!-- End of declarations for part "testfixed::TLA" -->
+			<!-- End of parts of the pmodel testfixed -->
+			
+			<!-- Start of links of the pmodel testfixed -->
+			<!-- End of links of the pmodel testfixed -->
+			
+			<!-- Start of joints of the pmodel testfixed -->
+			<!-- End of joints of the pmodel testfixed -->
+			
+			<!-- Start of fixed connections of the pmodel testfixed -->
+			<!-- End of fixed connections of the pmodel testfixed -->
+		</model>
+</sdf>

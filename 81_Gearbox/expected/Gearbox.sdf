@@ -1,0 +1,122 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="Gearbox">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel Gearbox -->
+				<!-- Start of declarations for part "Gearbox::p" -->
+					<!-- Start of parts of part "Gearbox::p" -->
+					<!-- End of parts of part "Gearbox::p" -->
+					
+					<!-- Start of links of part "Gearbox::p" -->
+					<!-- link full name is Gearbox::p::L2 -->
+					<link name="1-L2">
+							<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+					</link>	
+					<!-- link full name is Gearbox::p::B -->
+					<link name="2-B">
+							<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+					</link>	
+					<!-- End of links of part "Gearbox::p" -->
+					
+					<!-- Start of joints of part "Gearbox::p" -->
+					<!-- End of joints of part "Gearbox::p" -->
+					
+					<!-- Start of fixed connections of part "Gearbox::p" -->
+					
+					<!-- End of fixed connections of part "Gearbox::p" -->
+				<!-- End of declarations for part "Gearbox::p" -->
+			<!-- End of parts of the pmodel Gearbox -->
+			
+			<!-- Start of links of the pmodel Gearbox -->
+			<!-- link full name is Gearbox::B -->
+			<link name="3-B">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- link full name is Gearbox::C -->
+			<link name="4-C">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- link full name is Gearbox::A -->
+			<link name="5-A">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+			</link>	
+			<!-- End of links of the pmodel Gearbox -->
+			
+			<!-- Start of joints of the pmodel Gearbox -->
+			<!-- Full name of joint: Gearbox::A::R from Gearbox::A to Gearbox::p::L2-->
+			<joint name="6-R" type="gearbox">
+				<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+				<parent>5-A</parent>
+				<child>1-L2</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 6-R to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<gearbox_ratio>0.5</gearbox_ratio>
+				<gearbox_reference_body>3-B</gearbox_reference_body>
+			</joint>
+			<!-- End of joints of the pmodel Gearbox -->
+			
+			<!-- Start of fixed connections of the pmodel Gearbox -->
+			<!-- End of fixed connections of the pmodel Gearbox -->
+		</model>
+</sdf>

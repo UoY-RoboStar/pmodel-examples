@@ -1,0 +1,118 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="LR_IR">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel LR_IR -->
+			<!-- End of parts of the pmodel LR_IR -->
+			
+			<!-- Start of links of the pmodel LR_IR -->
+			<!-- link full name is LR_IR::BBody -->
+			<link name="1-BBody">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>0.0010000000474974513</mass>
+					</inertial>
+					<!-- body full name is LR_IR::BBody::Box -->
+					<collision name="1--Box">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--Box">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: The SDF generator relies on annotations to specify in SDF aspects of the sensor that are
+						 accounted for in the equations. -->
+					<!-- sensor simple name is IRSensor -->
+					<sensor name="IRSensor" type="ray">
+						<pose>0.004000000189989805 -0.004000000189989805 0.0 0.0 0.0 0.0</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+					<!-- WARNING: Annotation not found in actuator. RoboSim actuators have no explicit counterparts in SDF, 
+						 so the generator must rely on annotations to produce something meaningful in SDF. -->
+			</link>	
+			<!-- End of links of the pmodel LR_IR -->
+			
+			<!-- Start of joints of the pmodel LR_IR -->
+			<!-- End of joints of the pmodel LR_IR -->
+			
+			<!-- Start of fixed connections of the pmodel LR_IR -->
+			<!-- End of fixed connections of the pmodel LR_IR -->
+		</model>
+</sdf>

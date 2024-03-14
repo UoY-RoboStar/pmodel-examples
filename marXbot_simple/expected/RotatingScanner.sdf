@@ -1,0 +1,722 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="RotatingScanner">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel RotatingScanner -->
+				<!-- Start of declarations for part "RotatingScanner::longrange::0" -->
+					<!-- Start of parts of part "RotatingScanner::longrange::0" -->
+					<!-- End of parts of part "RotatingScanner::longrange::0" -->
+					
+					<!-- Start of links of part "RotatingScanner::longrange::0" -->
+					<!-- link full name is RotatingScanner::longrange::0::BBody -->
+					<link name="1-BBody">
+							<pose>0.0 0.0 0.005499999970197678 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>0.0010000000474974513</mass>
+							</inertial>
+							<!-- body full name is RotatingScanner::longrange::0::BBody::Box -->
+							<collision name="1--Box">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="1--Box">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor" type="ray">
+								<pose>0.004000000189989805 -0.004000000189989805 0.0 -0.0 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: Annotation not found for the actuator LeftLED. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+					</link>	
+					<!-- End of links of part "RotatingScanner::longrange::0" -->
+					
+					<!-- Start of joints of part "RotatingScanner::longrange::0" -->
+					<!-- End of joints of part "RotatingScanner::longrange::0" -->
+					
+					<!-- Start of fixed connections of part "RotatingScanner::longrange::0" -->
+					
+					<!-- End of fixed connections of part "RotatingScanner::longrange::0" -->
+				<!-- End of declarations for part "RotatingScanner::longrange::0" -->
+				<!-- Start of declarations for part "RotatingScanner::longrange::1" -->
+					<!-- Start of parts of part "RotatingScanner::longrange::1" -->
+					<!-- End of parts of part "RotatingScanner::longrange::1" -->
+					
+					<!-- Start of links of part "RotatingScanner::longrange::1" -->
+					<!-- link full name is RotatingScanner::longrange::1::BBody -->
+					<link name="2-BBody">
+							<pose>0.0 0.0 0.005499999970197678 0.0 0.0 1.5707499980926514</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>0.0010000000474974513</mass>
+							</inertial>
+							<!-- body full name is RotatingScanner::longrange::1::BBody::Box -->
+							<collision name="2--Box">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="2--Box">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor" type="ray">
+								<pose>0.004000000189989805 -0.004000000189989805 0.0 -0.0 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: Annotation not found for the actuator LeftLED. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+					</link>	
+					<!-- End of links of part "RotatingScanner::longrange::1" -->
+					
+					<!-- Start of joints of part "RotatingScanner::longrange::1" -->
+					<!-- End of joints of part "RotatingScanner::longrange::1" -->
+					
+					<!-- Start of fixed connections of part "RotatingScanner::longrange::1" -->
+					
+					<!-- End of fixed connections of part "RotatingScanner::longrange::1" -->
+				<!-- End of declarations for part "RotatingScanner::longrange::1" -->
+				<!-- Start of declarations for part "RotatingScanner::longrange::2" -->
+					<!-- Start of parts of part "RotatingScanner::longrange::2" -->
+					<!-- End of parts of part "RotatingScanner::longrange::2" -->
+					
+					<!-- Start of links of part "RotatingScanner::longrange::2" -->
+					<!-- link full name is RotatingScanner::longrange::2::BBody -->
+					<link name="3-BBody">
+							<pose>0.0 0.0 0.005499999970197678 0.0 0.0 3.1414999961853027</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>0.0010000000474974513</mass>
+							</inertial>
+							<!-- body full name is RotatingScanner::longrange::2::BBody::Box -->
+							<collision name="3--Box">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="3--Box">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor" type="ray">
+								<pose>0.004000000189989805 -0.004000000189989805 0.0 -0.0 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: Annotation not found for the actuator LeftLED. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+					</link>	
+					<!-- End of links of part "RotatingScanner::longrange::2" -->
+					
+					<!-- Start of joints of part "RotatingScanner::longrange::2" -->
+					<!-- End of joints of part "RotatingScanner::longrange::2" -->
+					
+					<!-- Start of fixed connections of part "RotatingScanner::longrange::2" -->
+					
+					<!-- End of fixed connections of part "RotatingScanner::longrange::2" -->
+				<!-- End of declarations for part "RotatingScanner::longrange::2" -->
+				<!-- Start of declarations for part "RotatingScanner::longrange::3" -->
+					<!-- Start of parts of part "RotatingScanner::longrange::3" -->
+					<!-- End of parts of part "RotatingScanner::longrange::3" -->
+					
+					<!-- Start of links of part "RotatingScanner::longrange::3" -->
+					<!-- link full name is RotatingScanner::longrange::3::BBody -->
+					<link name="4-BBody">
+							<pose>0.0 0.0 0.005499999970197678 0.0 0.0 4.712249994277954</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>0.0010000000474974513</mass>
+							</inertial>
+							<!-- body full name is RotatingScanner::longrange::3::BBody::Box -->
+							<collision name="4--Box">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="4--Box">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.00800000037997961 0.01600000075995922 0.00800000037997961</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor IRSensor to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is IRSensor -->
+							<sensor name="IRSensor" type="ray">
+								<pose>0.004000000189989805 -0.004000000189989805 0.0 -0.0 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1</update_rate>
+								<ray>
+									<scan>
+										<horizontal>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</horizontal>
+										<vertical>
+											<samples>1</samples>
+											<resolution>1.0</resolution>
+										</vertical>
+									</scan>
+									<range>
+										<min>0.0</min>
+										<max>0.10000000149011612</max>
+									</range>
+								</ray>
+							</sensor>
+							<!-- WARNING: Annotation not found for the actuator LeftLED. RoboSim actuators have no explicit counterparts in SDF, 
+								 so the generator must rely on annotations to produce something meaningful in SDF. If you wish to reflect these aspects in SDF,
+								 please add an appropriate annotation to the actuator. -->
+					</link>	
+					<!-- End of links of part "RotatingScanner::longrange::3" -->
+					
+					<!-- Start of joints of part "RotatingScanner::longrange::3" -->
+					<!-- End of joints of part "RotatingScanner::longrange::3" -->
+					
+					<!-- Start of fixed connections of part "RotatingScanner::longrange::3" -->
+					
+					<!-- End of fixed connections of part "RotatingScanner::longrange::3" -->
+				<!-- End of declarations for part "RotatingScanner::longrange::3" -->
+			<!-- End of parts of the pmodel RotatingScanner -->
+			
+			<!-- Start of links of the pmodel RotatingScanner -->
+			<!-- link full name is RotatingScanner::Base -->
+			<link name="5-Base">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>0.009999999776482582</mass>
+					</inertial>
+					<!-- body full name is RotatingScanner::Base::Frame -->
+					<collision name="5--Frame">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.06499999761581421</radius>
+								<length>0.0010000000474974513</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="5--Frame">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.06499999761581421</radius>
+								<length>0.0010000000474974513</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is RotatingScanner::Core -->
+			<link name="6-Core">
+					<pose>0.0 0.0 0.005499999970197678 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is RotatingScanner::Core::Spine -->
+					<collision name="6--Spine">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.03999999910593033</radius>
+								<length>0.009999999776482582</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="6--Spine">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.03999999910593033</radius>
+								<length>0.009999999776482582</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- body full name is RotatingScanner::Core::Top -->
+					<collision name="7--Top">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.005499999970197678 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.08500000089406967</radius>
+								<length>0.0010000000474974513</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="7--Top">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.005499999970197678 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.08500000089406967</radius>
+								<length>0.0010000000474974513</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel RotatingScanner -->
+			
+			<!-- Start of joints of the pmodel RotatingScanner -->
+			<!-- Full name of joint: RotatingScanner::Base::rj from RotatingScanner::Base to RotatingScanner::Core-->
+			<joint name="7-rj" type="revolute">
+				<pose>0.0 0.0 -0.005499999970197678 0.0 -0.0 0.0</pose>
+				<parent>5-Base</parent>
+				<child>6-Core</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 7-rj to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- End of joints of the pmodel RotatingScanner -->
+			
+			<!-- Start of fixed connections of the pmodel RotatingScanner -->
+			<!-- fixed joint full name is RotatingScanner::Core::fixedJoint::RotatingScanner::longrange::0::BBody from RotatingScanner::Core to RotatingScanner::longrange::0::BBody -->
+			<joint name="8-fixedJoint" type="fixed">
+				<parent>6-Core</parent>
+				<child>1-BBody</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- fixed joint full name is RotatingScanner::Core::fixedJoint::RotatingScanner::longrange::1::BBody from RotatingScanner::Core to RotatingScanner::longrange::1::BBody -->
+			<joint name="9-fixedJoint" type="fixed">
+				<parent>6-Core</parent>
+				<child>2-BBody</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- fixed joint full name is RotatingScanner::Core::fixedJoint::RotatingScanner::longrange::2::BBody from RotatingScanner::Core to RotatingScanner::longrange::2::BBody -->
+			<joint name="10-fixedJoint" type="fixed">
+				<parent>6-Core</parent>
+				<child>3-BBody</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- fixed joint full name is RotatingScanner::Core::fixedJoint::RotatingScanner::longrange::3::BBody from RotatingScanner::Core to RotatingScanner::longrange::3::BBody -->
+			<joint name="11-fixedJoint" type="fixed">
+				<parent>6-Core</parent>
+				<child>4-BBody</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- End of fixed connections of the pmodel RotatingScanner -->
+		</model>
+</sdf>

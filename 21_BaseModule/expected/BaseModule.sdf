@@ -1,0 +1,836 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="BaseModule">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel BaseModule -->
+				<!-- Start of declarations for part "BaseModule::LTREEL" -->
+					<!-- Start of parts of part "BaseModule::LTREEL" -->
+					<!-- End of parts of part "BaseModule::LTREEL" -->
+					
+					<!-- Start of links of part "BaseModule::LTREEL" -->
+					<!-- link full name is BaseModule::LTREEL::Wheel -->
+					<link name="1-Wheel">
+							<pose>0.0 0.5999996434102257 0.2495222355772818 -1.5731851498233245 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is BaseModule::LTREEL::Wheel::wheel -->
+							<collision name="1--wheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="1--wheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- link full name is BaseModule::LTREEL::Track -->
+					<link name="2-Track">
+							<pose>0.0 0.30000001192092896 0.25 3.140000104904175 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is BaseModule::LTREEL::Track::FrontWheel -->
+							<collision name="2--FrontWheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>-0.6000000238418579 0.0 0.0 1.5700000524520874 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="2--FrontWheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>-0.6000000238418579 0.0 0.0 1.5700000524520874 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- body full name is BaseModule::LTREEL::Track::BackWheel -->
+							<collision name="3--BackWheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.6000000238418579 0.0 0.0 1.5700000524520874 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="3--BackWheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.6000000238418579 0.0 0.0 1.5700000524520874 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- body full name is BaseModule::LTREEL::Track::Top -->
+							<collision name="4--Top">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.25 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.2000000476837158 0.30000001192092896 0.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="4--Top">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.25 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.2000000476837158 0.30000001192092896 0.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- body full name is BaseModule::LTREEL::Track::Bottom -->
+							<collision name="5--Bottom">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 -0.25 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.2000000476837158 0.30000001192092896 0.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="5--Bottom">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 -0.25 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.2000000476837158 0.30000001192092896 0.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "BaseModule::LTREEL" -->
+					
+					<!-- Start of joints of part "BaseModule::LTREEL" -->
+					<!-- End of joints of part "BaseModule::LTREEL" -->
+					
+					<!-- Start of fixed connections of part "BaseModule::LTREEL" -->
+					
+					<!-- End of fixed connections of part "BaseModule::LTREEL" -->
+				<!-- End of declarations for part "BaseModule::LTREEL" -->
+				<!-- Start of declarations for part "BaseModule::RTREEL" -->
+					<!-- Start of parts of part "BaseModule::RTREEL" -->
+					<!-- End of parts of part "BaseModule::RTREEL" -->
+					
+					<!-- Start of links of part "BaseModule::RTREEL" -->
+					<!-- link full name is BaseModule::RTREEL::Wheel -->
+					<link name="3-Wheel">
+							<pose>0.0 -0.6000000238418579 0.25 1.5700000524520874 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is BaseModule::RTREEL::Wheel::wheel -->
+							<collision name="6--wheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="6--wheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- link full name is BaseModule::RTREEL::Track -->
+					<link name="4-Track">
+							<pose>0.0 -0.30000001192092896 0.25 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is BaseModule::RTREEL::Track::FrontWheel -->
+							<collision name="7--FrontWheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>-0.6000000238418579 0.0 0.0 1.5700000524520874 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="7--FrontWheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>-0.6000000238418579 0.0 0.0 1.5700000524520874 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- body full name is BaseModule::RTREEL::Track::BackWheel -->
+							<collision name="8--BackWheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.6000000238418579 0.0 0.0 1.5700000524520874 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="8--BackWheel">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.6000000238418579 0.0 0.0 1.5700000524520874 0.0 0.0</pose>
+								<geometry>
+									<cylinder>
+										<radius>0.25</radius>
+										<length>0.30000001192092896</length>
+									</cylinder>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- body full name is BaseModule::RTREEL::Track::Top -->
+							<collision name="9--Top">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.25 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.2000000476837158 0.30000001192092896 0.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="9--Top">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.25 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.2000000476837158 0.30000001192092896 0.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+							<!-- body full name is BaseModule::RTREEL::Track::Bottom -->
+							<collision name="10--Bottom">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 -0.25 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.2000000476837158 0.30000001192092896 0.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="10--Bottom">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 -0.25 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>1.2000000476837158 0.30000001192092896 0.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "BaseModule::RTREEL" -->
+					
+					<!-- Start of joints of part "BaseModule::RTREEL" -->
+					<!-- End of joints of part "BaseModule::RTREEL" -->
+					
+					<!-- Start of fixed connections of part "BaseModule::RTREEL" -->
+					
+					<!-- End of fixed connections of part "BaseModule::RTREEL" -->
+				<!-- End of declarations for part "BaseModule::RTREEL" -->
+			<!-- End of parts of the pmodel BaseModule -->
+			
+			<!-- Start of links of the pmodel BaseModule -->
+			<!-- link full name is BaseModule::Core -->
+			<link name="5-Core">
+					<pose>0.0 0.0 0.574999988079071 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is BaseModule::Core::Spine -->
+					<collision name="11--Spine">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 -0.22499999403953552 0.0 0.0 1.5700000524520874</pose>
+						<geometry>
+							<box> 
+								<size>0.30000001192092896 1.600000023841858 0.4000000059604645</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="11--Spine">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 -0.22499999403953552 0.0 0.0 1.5700000524520874</pose>
+						<geometry>
+							<box> 
+								<size>0.30000001192092896 1.600000023841858 0.4000000059604645</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- body full name is BaseModule::Core::Frame -->
+					<collision name="12--Frame">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.8500000238418579</radius>
+								<length>0.05000000074505806</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="12--Frame">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.8500000238418579</radius>
+								<length>0.05000000074505806</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel BaseModule -->
+			
+			<!-- Start of joints of the pmodel BaseModule -->
+			<!-- End of joints of the pmodel BaseModule -->
+			
+			<!-- Start of fixed connections of the pmodel BaseModule -->
+			<!-- fixed joint full name is BaseModule::Core::fixedJoint::BaseModule::LTREEL::Track from BaseModule::Core to BaseModule::LTREEL::Track -->
+			<joint name="6-fixedJoint" type="fixed">
+				<parent>5-Core</parent>
+				<child>2-Track</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- fixed joint full name is BaseModule::Core::fixedJoint::BaseModule::RTREEL::Track from BaseModule::Core to BaseModule::RTREEL::Track -->
+			<joint name="7-fixedJoint" type="fixed">
+				<parent>5-Core</parent>
+				<child>4-Track</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- End of fixed connections of the pmodel BaseModule -->
+		</model>
+</sdf>

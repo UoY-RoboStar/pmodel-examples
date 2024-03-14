@@ -1,0 +1,400 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="CValsTest">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel CValsTest -->
+				<!-- Start of declarations for part "CValsTest::p1" -->
+					<!-- Start of parts of part "CValsTest::p1" -->
+					<!-- End of parts of part "CValsTest::p1" -->
+					
+					<!-- Start of links of part "CValsTest::p1" -->
+					<!-- link full name is CValsTest::p1::L1 -->
+					<link name="1-L1">
+							<pose>3.0 13.0 5.0 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is CValsTest::p1::L1::B1 -->
+							<collision name="1--B1">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>6.0 4.0 12.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="1--B1">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>6.0 4.0 12.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "CValsTest::p1" -->
+					
+					<!-- Start of joints of part "CValsTest::p1" -->
+					<!-- End of joints of part "CValsTest::p1" -->
+					
+					<!-- Start of fixed connections of part "CValsTest::p1" -->
+					
+					<!-- End of fixed connections of part "CValsTest::p1" -->
+				<!-- End of declarations for part "CValsTest::p1" -->
+				<!-- Start of declarations for part "CValsTest::p2" -->
+					<!-- Start of parts of part "CValsTest::p2" -->
+					<!-- End of parts of part "CValsTest::p2" -->
+					
+					<!-- Start of links of part "CValsTest::p2" -->
+					<!-- link full name is CValsTest::p2::L1 -->
+					<link name="2-L1">
+							<pose>3.0 13.0 5.0 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is CValsTest::p2::L1::B1 -->
+							<collision name="2--B1">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>7.0 4.0 12.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="2--B1">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>7.0 4.0 12.0</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "CValsTest::p2" -->
+					
+					<!-- Start of joints of part "CValsTest::p2" -->
+					<!-- End of joints of part "CValsTest::p2" -->
+					
+					<!-- Start of fixed connections of part "CValsTest::p2" -->
+					
+					<!-- End of fixed connections of part "CValsTest::p2" -->
+				<!-- End of declarations for part "CValsTest::p2" -->
+			<!-- End of parts of the pmodel CValsTest -->
+			
+			<!-- Start of links of the pmodel CValsTest -->
+			<!-- link full name is CValsTest::L1 -->
+			<link name="3-L1">
+					<pose>3.0 13.0 2.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is CValsTest::L1::B1 -->
+					<collision name="3--B1">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>14.0 4.0 12.0</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="3--B1">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>14.0 4.0 12.0</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor MyIMU1 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is MyIMU1 -->
+					<sensor name="MyIMU1" type="imu">
+						<pose>0.0 0.0 0.0 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<update_rate>8.0</update_rate>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor MyIMU2 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is MyIMU2 -->
+					<sensor name="MyIMU2" type="imu">
+						<pose>0.0 0.0 0.0 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<update_rate>16.0</update_rate>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor MyIMU3 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is MyIMU3 -->
+					<sensor name="MyIMU3" type="imu">
+						<pose>0.0 0.0 0.0 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<update_rate>13.0</update_rate>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor MyIMU4 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is MyIMU4 -->
+					<sensor name="MyIMU4" type="imu">
+						<pose>0.0 0.0 0.0 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<update_rate>14.0</update_rate>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor MyIMU5 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is MyIMU5 -->
+					<sensor name="MyIMU5" type="imu">
+						<pose>0.0 0.0 0.0 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<update_rate>20.0</update_rate>
+					</sensor>
+			</link>	
+			<!-- link full name is CValsTest::L2 -->
+			<link name="4-L2">
+					<pose>3.0 13.0 2.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is CValsTest::L2::B2 -->
+					<collision name="4--B2">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>14.0 4.0 12.0</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="4--B2">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>14.0 4.0 12.0</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel CValsTest -->
+			
+			<!-- Start of joints of the pmodel CValsTest -->
+			<!-- Full name of joint: CValsTest::L1::j1 from CValsTest::L1 to CValsTest::L2-->
+			<joint name="5-j1" type="revolute">
+				<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+				<parent>3-L1</parent>
+				<child>4-L2</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 5-j1 to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>4.0 21 22</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: CValsTest::L1::j2 from CValsTest::L1 to CValsTest::L2-->
+			<joint name="6-j2" type="revolute">
+				<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+				<parent>3-L1</parent>
+				<child>4-L2</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 6-j2 to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>4.0 21 23</xyz>
+				</axis>
+			</joint>
+			<!-- End of joints of the pmodel CValsTest -->
+			
+			<!-- Start of fixed connections of the pmodel CValsTest -->
+			<!-- End of fixed connections of the pmodel CValsTest -->
+		</model>
+</sdf>

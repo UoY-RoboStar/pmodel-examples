@@ -1,0 +1,116 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="BodyRay">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel BodyRay -->
+			<!-- End of parts of the pmodel BodyRay -->
+			
+			<!-- Start of links of the pmodel BodyRay -->
+			<!-- link full name is BodyRay::Tip -->
+			<link name="1-Tip">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is BodyRay::Tip::my_body -->
+					<collision name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.05000000074505806</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.05000000074505806</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_ray to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_ray -->
+					<sensor name="my_ray" type="ray">
+						<pose>0.0 0.0 0.8999999761581421 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1</update_rate>
+						<ray>
+							<scan>
+								<horizontal>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</horizontal>
+								<vertical>
+									<samples>1</samples>
+									<resolution>1.0</resolution>
+								</vertical>
+							</scan>
+							<range>
+								<min>0.0</min>
+								<max>0.10000000149011612</max>
+							</range>
+						</ray>
+					</sensor>
+			</link>	
+			<!-- End of links of the pmodel BodyRay -->
+			
+			<!-- Start of joints of the pmodel BodyRay -->
+			<!-- End of joints of the pmodel BodyRay -->
+			
+			<!-- Start of fixed connections of the pmodel BodyRay -->
+			<!-- End of fixed connections of the pmodel BodyRay -->
+		</model>
+</sdf>

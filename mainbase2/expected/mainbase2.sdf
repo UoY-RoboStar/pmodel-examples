@@ -1,0 +1,490 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="mainbase2">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel mainbase2 -->
+				<!-- Start of declarations for part "mainbase2::LBASE" -->
+					<!-- Start of parts of part "mainbase2::LBASE" -->
+					<!-- Start of declarations for part "mainbase2::LBASE::LWHEEL" -->
+						<!-- Start of parts of part "mainbase2::LBASE::LWHEEL" -->
+						<!-- End of parts of part "mainbase2::LBASE::LWHEEL" -->
+						
+						<!-- Start of links of part "mainbase2::LBASE::LWHEEL" -->
+						<!-- link full name is mainbase2::LBASE::LWHEEL::wheel -->
+						<link name="1-wheel">
+								<pose>-0.30000000447034836 0.05000000074505806 0.0 0.0 -0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>1.0</mass>
+								</inertial>
+								<!-- body full name is mainbase2::LBASE::LWHEEL::wheel::bwheel -->
+								<collision name="1--bwheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="1--bwheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+						</link>	
+						<!-- End of links of part "mainbase2::LBASE::LWHEEL" -->
+						
+						<!-- Start of joints of part "mainbase2::LBASE::LWHEEL" -->
+						<!-- End of joints of part "mainbase2::LBASE::LWHEEL" -->
+						
+						<!-- Start of fixed connections of part "mainbase2::LBASE::LWHEEL" -->
+						
+						<!-- End of fixed connections of part "mainbase2::LBASE::LWHEEL" -->
+					<!-- End of declarations for part "mainbase2::LBASE::LWHEEL" -->
+					<!-- Start of declarations for part "mainbase2::LBASE::RWHEEL" -->
+						<!-- Start of parts of part "mainbase2::LBASE::RWHEEL" -->
+						<!-- End of parts of part "mainbase2::LBASE::RWHEEL" -->
+						
+						<!-- Start of links of part "mainbase2::LBASE::RWHEEL" -->
+						<!-- link full name is mainbase2::LBASE::RWHEEL::wheel -->
+						<link name="2-wheel">
+								<pose>-0.10000000149011612 0.05000000074505806 0.0 0.0 -0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>1.0</mass>
+								</inertial>
+								<!-- body full name is mainbase2::LBASE::RWHEEL::wheel::bwheel -->
+								<collision name="2--bwheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="2--bwheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+						</link>	
+						<!-- End of links of part "mainbase2::LBASE::RWHEEL" -->
+						
+						<!-- Start of joints of part "mainbase2::LBASE::RWHEEL" -->
+						<!-- End of joints of part "mainbase2::LBASE::RWHEEL" -->
+						
+						<!-- Start of fixed connections of part "mainbase2::LBASE::RWHEEL" -->
+						
+						<!-- End of fixed connections of part "mainbase2::LBASE::RWHEEL" -->
+					<!-- End of declarations for part "mainbase2::LBASE::RWHEEL" -->
+					<!-- End of parts of part "mainbase2::LBASE" -->
+					
+					<!-- Start of links of part "mainbase2::LBASE" -->
+					<!-- link full name is mainbase2::LBASE::Core -->
+					<link name="3-Core">
+							<pose>-0.20000000298023224 0.0 0.0 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+					</link>	
+					<!-- End of links of part "mainbase2::LBASE" -->
+					
+					<!-- Start of joints of part "mainbase2::LBASE" -->
+					<!-- Full name of joint: mainbase2::LBASE::Core::LJ from mainbase2::LBASE::Core to mainbase2::LBASE::LWHEEL::wheel-->
+					<joint name="4-LJ" type="revolute">
+						<pose>0.10000000149011612 -0.05000000074505806 0.0 0.0 -0.0 0.0</pose>
+						<parent>3-Core</parent>
+						<child>1-wheel</child>
+						<!-- WARNING: The SDF generator relies on annotations of the joint 4-LJ to specify in SDF aspects of the joint that are
+							 accounted for in the equations. -->
+					</joint>
+					<!-- Full name of joint: mainbase2::LBASE::Core::RJ from mainbase2::LBASE::Core to mainbase2::LBASE::RWHEEL::wheel-->
+					<joint name="5-RJ" type="revolute">
+						<pose>-0.10000000149011612 -0.05000000074505806 0.0 0.0 -0.0 0.0</pose>
+						<parent>3-Core</parent>
+						<child>2-wheel</child>
+						<!-- WARNING: The SDF generator relies on annotations of the joint 5-RJ to specify in SDF aspects of the joint that are
+							 accounted for in the equations. -->
+					</joint>
+					<!-- End of joints of part "mainbase2::LBASE" -->
+					
+					<!-- Start of fixed connections of part "mainbase2::LBASE" -->
+					
+					<!-- fixed joint full name is mainbase2::LBASE::Core::fixedJoint::mainbase2::LBASE::LWHEEL::wheel from mainbase2::LBASE::Core to mainbase2::LBASE::LWHEEL::wheel -->
+					<joint name="6-fixedJoint" type="fixed">
+						<parent>3-Core</parent>
+						<child>1-wheel</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- fixed joint full name is mainbase2::LBASE::Core::fixedJoint::mainbase2::LBASE::RWHEEL::wheel from mainbase2::LBASE::Core to mainbase2::LBASE::RWHEEL::wheel -->
+					<joint name="7-fixedJoint" type="fixed">
+						<parent>3-Core</parent>
+						<child>2-wheel</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- End of fixed connections of part "mainbase2::LBASE" -->
+				<!-- End of declarations for part "mainbase2::LBASE" -->
+				<!-- Start of declarations for part "mainbase2::RBASE" -->
+					<!-- Start of parts of part "mainbase2::RBASE" -->
+					<!-- Start of declarations for part "mainbase2::RBASE::LWHEEL" -->
+						<!-- Start of parts of part "mainbase2::RBASE::LWHEEL" -->
+						<!-- End of parts of part "mainbase2::RBASE::LWHEEL" -->
+						
+						<!-- Start of links of part "mainbase2::RBASE::LWHEEL" -->
+						<!-- link full name is mainbase2::RBASE::LWHEEL::wheel -->
+						<link name="8-wheel">
+								<pose>0.10000000149011612 0.10000000149011612 0.0 0.0 -0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>1.0</mass>
+								</inertial>
+								<!-- body full name is mainbase2::RBASE::LWHEEL::wheel::bwheel -->
+								<collision name="3--bwheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="3--bwheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+						</link>	
+						<!-- End of links of part "mainbase2::RBASE::LWHEEL" -->
+						
+						<!-- Start of joints of part "mainbase2::RBASE::LWHEEL" -->
+						<!-- End of joints of part "mainbase2::RBASE::LWHEEL" -->
+						
+						<!-- Start of fixed connections of part "mainbase2::RBASE::LWHEEL" -->
+						
+						<!-- End of fixed connections of part "mainbase2::RBASE::LWHEEL" -->
+					<!-- End of declarations for part "mainbase2::RBASE::LWHEEL" -->
+					<!-- Start of declarations for part "mainbase2::RBASE::RWHEEL" -->
+						<!-- Start of parts of part "mainbase2::RBASE::RWHEEL" -->
+						<!-- End of parts of part "mainbase2::RBASE::RWHEEL" -->
+						
+						<!-- Start of links of part "mainbase2::RBASE::RWHEEL" -->
+						<!-- link full name is mainbase2::RBASE::RWHEEL::wheel -->
+						<link name="9-wheel">
+								<pose>0.30000000447034836 0.10000000149011612 0.0 0.0 -0.0 0.0</pose>
+								<inertial>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<inertia>
+										<ixx>1.0</ixx>
+										<ixy>0.0</ixy>
+										<ixz>0.0</ixz>
+										<iyy>1.0</iyy>
+										<iyz>0.0</iyz>
+										<izz>1.0</izz>
+									</inertia>
+									<mass>1.0</mass>
+								</inertial>
+								<!-- body full name is mainbase2::RBASE::RWHEEL::wheel::bwheel -->
+								<collision name="4--bwheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</collision>
+								<visual name="4--bwheel">
+									<laser_retro>0.0</laser_retro>
+									<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+									<geometry>
+										<cylinder>
+											<radius>0.02500000037252903</radius>
+											<length>0.029999999329447746</length>
+										</cylinder>
+									</geometry>
+									<surface>
+										<bounce>
+											<restitution_coefficient>0.0</restitution_coefficient>
+											<threshold>100000.0</threshold>
+										</bounce>
+										<friction>
+											<ode>
+												<mu>1.0</mu>
+												<mu2>1.0</mu2>
+												<fdir1>0.0 0.0 0.0</fdir1>
+												<slip1>0.0</slip1>
+												<slip2>0.0</slip2>
+											</ode>
+											<torsional>
+												<coefficient>1.0</coefficient>
+												<surface_radius>0.0</surface_radius>
+											</torsional>
+										</friction>
+									</surface>
+								</visual>
+						</link>	
+						<!-- End of links of part "mainbase2::RBASE::RWHEEL" -->
+						
+						<!-- Start of joints of part "mainbase2::RBASE::RWHEEL" -->
+						<!-- End of joints of part "mainbase2::RBASE::RWHEEL" -->
+						
+						<!-- Start of fixed connections of part "mainbase2::RBASE::RWHEEL" -->
+						
+						<!-- End of fixed connections of part "mainbase2::RBASE::RWHEEL" -->
+					<!-- End of declarations for part "mainbase2::RBASE::RWHEEL" -->
+					<!-- End of parts of part "mainbase2::RBASE" -->
+					
+					<!-- Start of links of part "mainbase2::RBASE" -->
+					<!-- link full name is mainbase2::RBASE::Core -->
+					<link name="10-Core">
+							<pose>0.20000000298023224 0.0 0.0 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+					</link>	
+					<!-- End of links of part "mainbase2::RBASE" -->
+					
+					<!-- Start of joints of part "mainbase2::RBASE" -->
+					<!-- Full name of joint: mainbase2::RBASE::Core::RJ from mainbase2::RBASE::Core to mainbase2::RBASE::RWHEEL::wheel-->
+					<joint name="11-RJ" type="revolute">
+						<pose>-0.10000000149011612 -0.10000000149011612 0.0 0.0 -0.0 0.0</pose>
+						<parent>10-Core</parent>
+						<child>9-wheel</child>
+						<!-- WARNING: The SDF generator relies on annotations of the joint 11-RJ to specify in SDF aspects of the joint that are
+							 accounted for in the equations. -->
+					</joint>
+					<!-- Full name of joint: mainbase2::RBASE::Core::LJ from mainbase2::RBASE::Core to mainbase2::RBASE::LWHEEL::wheel-->
+					<joint name="12-LJ" type="revolute">
+						<pose>0.10000000149011612 -0.10000000149011612 0.0 0.0 -0.0 0.0</pose>
+						<parent>10-Core</parent>
+						<child>8-wheel</child>
+						<!-- WARNING: The SDF generator relies on annotations of the joint 12-LJ to specify in SDF aspects of the joint that are
+							 accounted for in the equations. -->
+					</joint>
+					<!-- End of joints of part "mainbase2::RBASE" -->
+					
+					<!-- Start of fixed connections of part "mainbase2::RBASE" -->
+					
+					<!-- fixed joint full name is mainbase2::RBASE::Core::fixedJoint::mainbase2::RBASE::LWHEEL::wheel from mainbase2::RBASE::Core to mainbase2::RBASE::LWHEEL::wheel -->
+					<joint name="13-fixedJoint" type="fixed">
+						<parent>10-Core</parent>
+						<child>8-wheel</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- fixed joint full name is mainbase2::RBASE::Core::fixedJoint::mainbase2::RBASE::RWHEEL::wheel from mainbase2::RBASE::Core to mainbase2::RBASE::RWHEEL::wheel -->
+					<joint name="14-fixedJoint" type="fixed">
+						<parent>10-Core</parent>
+						<child>9-wheel</child>
+						<axis><xyz>0 0 1</xyz></axis>
+					</joint>
+					<!-- End of fixed connections of part "mainbase2::RBASE" -->
+				<!-- End of declarations for part "mainbase2::RBASE" -->
+			<!-- End of parts of the pmodel mainbase2 -->
+			
+			<!-- Start of links of the pmodel mainbase2 -->
+			<!-- End of links of the pmodel mainbase2 -->
+			
+			<!-- Start of joints of the pmodel mainbase2 -->
+			<!-- End of joints of the pmodel mainbase2 -->
+			
+			<!-- Start of fixed connections of the pmodel mainbase2 -->
+			<!-- End of fixed connections of the pmodel mainbase2 -->
+		</model>
+</sdf>

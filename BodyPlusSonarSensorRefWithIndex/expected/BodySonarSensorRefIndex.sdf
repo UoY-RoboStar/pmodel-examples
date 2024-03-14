@@ -1,0 +1,427 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="BodySonarSensorRefIndex">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel BodySonarSensorRefIndex -->
+			<!-- End of parts of the pmodel BodySonarSensorRefIndex -->
+			
+			<!-- Start of links of the pmodel BodySonarSensorRefIndex -->
+			<!-- link full name is BodySonarSensorRefIndex::Tip -->
+			<link name="1-Tip">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is BodySonarSensorRefIndex::Tip::my_body -->
+					<collision name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.05000000074505806</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--my_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.8999999761581421 0.0 0.0 0.0</pose>
+						<geometry>
+							<sphere>
+								<radius>0.05000000074505806</radius>
+							</sphere>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::0 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::0" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.141592653589793</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::1 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::1" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.1414073387808124</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::2 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::2" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.141222023971831</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::3 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::3" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.1410367091628504</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::4 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::4" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.140851394353869</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::5 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::5" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.1406660795448884</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::6 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::6" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.140480764735907</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::7 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::7" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.140295449926926</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::8 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::8" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.1401101351179452</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::9 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::9" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.139924820308964</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::10 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::10" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.1397395054999833</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::11 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::11" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.139554190691002</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::12 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::12" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.1393688758820213</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::13 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::13" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.13918356107304</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::14 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::14" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.1389982462640593</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::15 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::15" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.138812931455078</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::16 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::16" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.138627616646097</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::17 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::17" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.138442301837116</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::18 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::18" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.138256987028135</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::19 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::19" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.138071672219154</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::20 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::20" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.137886357410173</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::21 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::21" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.137701042601192</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::22 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::22" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.137515727792211</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor::23 to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor::23" type="sonar">
+						<pose>0.0 0.0 0.0024999999441206455 3.141592653589793 4.63287071418409E-5 3.1373304129832302</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2.0</max>
+							<radius>1.5</radius>
+						</sonar>
+					</sensor>
+			</link>	
+			<!-- End of links of the pmodel BodySonarSensorRefIndex -->
+			
+			<!-- Start of joints of the pmodel BodySonarSensorRefIndex -->
+			<!-- End of joints of the pmodel BodySonarSensorRefIndex -->
+			
+			<!-- Start of fixed connections of the pmodel BodySonarSensorRefIndex -->
+			<!-- End of fixed connections of the pmodel BodySonarSensorRefIndex -->
+		</model>
+</sdf>

@@ -1,0 +1,177 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="TwoBodiesPlusJoint">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel TwoBodiesPlusJoint -->
+			<!-- End of parts of the pmodel TwoBodiesPlusJoint -->
+			
+			<!-- Start of links of the pmodel TwoBodiesPlusJoint -->
+			<!-- link full name is TwoBodiesPlusJoint::base_link -->
+			<link name="1-base_link">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>0.4000000059604645</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>0.4000000059604645</iyy>
+							<iyz>0.0</iyz>
+							<izz>0.20000000298023224</izz>
+						</inertia>
+						<mass>10.0</mass>
+					</inertial>
+					<!-- body full name is TwoBodiesPlusJoint::base_link::base_body -->
+					<collision name="1--base_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.05000000074505806</radius>
+								<length>0.23999999463558197</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--base_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.05000000074505806</radius>
+								<length>0.23999999463558197</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is TwoBodiesPlusJoint::second_link -->
+			<link name="2-second_link">
+					<pose>0.0 0.0 0.11999999731779099 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>0.0</ixx>
+							<ixy>2.835000050254166E-4</ixy>
+							<ixz>0.0</ixz>
+							<iyy>2.835000050254166E-4</iyy>
+							<iyz>0.0</iyz>
+							<izz>3.239999932702631E-4</izz>
+						</inertia>
+						<mass>10.0</mass>
+					</inertial>
+					<!-- body full name is TwoBodiesPlusJoint::second_link::second_body -->
+					<collision name="2--second_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.029999999329447746</radius>
+								<length>0.23999999463558197</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="2--second_body">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<cylinder>
+								<radius>0.029999999329447746</radius>
+								<length>0.23999999463558197</length>
+							</cylinder>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel TwoBodiesPlusJoint -->
+			
+			<!-- Start of joints of the pmodel TwoBodiesPlusJoint -->
+			<!-- Full name of joint: TwoBodiesPlusJoint::base_link::my_joint from TwoBodiesPlusJoint::base_link to TwoBodiesPlusJoint::second_link-->
+			<joint name="3-my_joint" type="revolute">
+				<pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+				<parent>1-base_link</parent>
+				<child>2-second_link</child>
+				<!-- WARNING: Annotation not found for the joint 3-my_joint. The SDF generator relies on annotations to specify SDF aspects
+				     of the joint that are accounted for in the equations. If you wish to reflect these aspects in SDF,
+				     please add an appropriate annotation to the joint. --> 
+			</joint>
+			<!-- End of joints of the pmodel TwoBodiesPlusJoint -->
+			
+			<!-- Start of fixed connections of the pmodel TwoBodiesPlusJoint -->
+			<!-- End of fixed connections of the pmodel TwoBodiesPlusJoint -->
+		</model>
+</sdf>

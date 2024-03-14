@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<physmod:PMPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:physmod="http://www.robocalc.circus/PhysMod" xmlns:robochart="http://www.robocalc.circus/RoboChart">
+  <imports importedNamespace="basemodule::*"/>
+  <imports importedNamespace="rangeandbearing::*"/>
+  <imports importedNamespace="rotatingscanner::*"/>
+  <pmodels name="Marxbot">
+    <parts name="p1">
+      <model href="Marxbot.pm#|0"/>
+      <fixed part="//@pmodels.0/@parts.1">
+        <link href="Marxbot.pm#|2"/>
+        <sourceLink href="Marxbot.pm#|1"/>
+      </fixed>
+    </parts>
+    <parts name="p2">
+      <pose>
+        <x xsi:type="robochart:IntegerExp"/>
+        <y xsi:type="robochart:IntegerExp"/>
+        <z xsi:type="physmod:UnitExp">
+          <exp xsi:type="robochart:FloatExp" value="0.0625"/>
+          <unit xsi:type="physmod:UnitReference">
+            <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+          </unit>
+        </z>
+        <roll xsi:type="robochart:IntegerExp"/>
+        <pitch xsi:type="robochart:IntegerExp"/>
+        <yaw xsi:type="robochart:IntegerExp"/>
+      </pose>
+      <model href="Marxbot.pm#|4"/>
+      <fixed part="//@pmodels.0/@parts.2">
+        <link href="Marxbot.pm#|7"/>
+        <sourceLink href="Marxbot.pm#|6"/>
+      </fixed>
+    </parts>
+    <parts name="p3">
+      <pose>
+        <x xsi:type="robochart:IntegerExp"/>
+        <y xsi:type="robochart:IntegerExp"/>
+        <z xsi:type="physmod:UnitExp">
+          <exp xsi:type="robochart:FloatExp" value="0.0655"/>
+          <unit xsi:type="physmod:UnitReference">
+            <ref href="platform:/plugin/circus.robocalc.robosim.physmod.textual/lib/physmod/SI/units.pm#//@unitdefinitions.0"/>
+          </unit>
+        </z>
+        <roll xsi:type="robochart:IntegerExp"/>
+        <pitch xsi:type="robochart:IntegerExp"/>
+        <yaw xsi:type="robochart:IntegerExp"/>
+      </pose>
+      <model href="Marxbot.pm#|9"/>
+    </parts>
+  </pmodels>
+</physmod:PMPackage>

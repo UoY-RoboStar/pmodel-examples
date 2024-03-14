@@ -1,0 +1,366 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="IP">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel IP -->
+				<!-- Start of declarations for part "IP::a::0" -->
+					<!-- Start of parts of part "IP::a::0" -->
+					<!-- End of parts of part "IP::a::0" -->
+					
+					<!-- Start of links of part "IP::a::0" -->
+					<!-- link full name is IP::a::0::L1 -->
+					<link name="1-L1">
+							<pose>0.0 0.0 0.05000000074505806 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is IP::a::0::L1::B -->
+							<collision name="1--B">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.10000000149011612 0.10000000149011612 0.10000000149011612</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="1--B">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.10000000149011612 0.10000000149011612 0.10000000149011612</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "IP::a::0" -->
+					
+					<!-- Start of joints of part "IP::a::0" -->
+					<!-- End of joints of part "IP::a::0" -->
+					
+					<!-- Start of fixed connections of part "IP::a::0" -->
+					
+					<!-- End of fixed connections of part "IP::a::0" -->
+				<!-- End of declarations for part "IP::a::0" -->
+				<!-- Start of declarations for part "IP::a::1" -->
+					<!-- Start of parts of part "IP::a::1" -->
+					<!-- End of parts of part "IP::a::1" -->
+					
+					<!-- Start of links of part "IP::a::1" -->
+					<!-- link full name is IP::a::1::L1 -->
+					<link name="2-L1">
+							<pose>0.20000000298023224 0.0 0.05000000074505806 0.0 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is IP::a::1::L1::B -->
+							<collision name="2--B">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.10000000149011612 0.10000000149011612 0.10000000149011612</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="2--B">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.10000000149011612 0.10000000149011612 0.10000000149011612</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "IP::a::1" -->
+					
+					<!-- Start of joints of part "IP::a::1" -->
+					<!-- End of joints of part "IP::a::1" -->
+					
+					<!-- Start of fixed connections of part "IP::a::1" -->
+					
+					<!-- End of fixed connections of part "IP::a::1" -->
+				<!-- End of declarations for part "IP::a::1" -->
+				<!-- Start of declarations for part "IP::a::2" -->
+					<!-- Start of parts of part "IP::a::2" -->
+					<!-- End of parts of part "IP::a::2" -->
+					
+					<!-- Start of links of part "IP::a::2" -->
+					<!-- link full name is IP::a::2::L1 -->
+					<link name="3-L1">
+							<pose>0.4000000059604645 0.0 0.05000000074505806 0.0 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is IP::a::2::L1::B -->
+							<collision name="3--B">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.10000000149011612 0.10000000149011612 0.10000000149011612</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="3--B">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.10000000149011612 0.10000000149011612 0.10000000149011612</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "IP::a::2" -->
+					
+					<!-- Start of joints of part "IP::a::2" -->
+					<!-- End of joints of part "IP::a::2" -->
+					
+					<!-- Start of fixed connections of part "IP::a::2" -->
+					
+					<!-- End of fixed connections of part "IP::a::2" -->
+				<!-- End of declarations for part "IP::a::2" -->
+				<!-- Start of declarations for part "IP::a::3" -->
+					<!-- Start of parts of part "IP::a::3" -->
+					<!-- End of parts of part "IP::a::3" -->
+					
+					<!-- Start of links of part "IP::a::3" -->
+					<!-- link full name is IP::a::3::L1 -->
+					<link name="4-L1">
+							<pose>0.6000000089406967 0.0 0.05000000074505806 0.0 -0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- body full name is IP::a::3::L1::B -->
+							<collision name="4--B">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.10000000149011612 0.10000000149011612 0.10000000149011612</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</collision>
+							<visual name="4--B">
+								<laser_retro>0.0</laser_retro>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<geometry>
+									<box> 
+										<size>0.10000000149011612 0.10000000149011612 0.10000000149011612</size>
+									</box>
+								</geometry>
+								<surface>
+									<bounce>
+										<restitution_coefficient>0.0</restitution_coefficient>
+										<threshold>100000.0</threshold>
+									</bounce>
+									<friction>
+										<ode>
+											<mu>1.0</mu>
+											<mu2>1.0</mu2>
+											<fdir1>0.0 0.0 0.0</fdir1>
+											<slip1>0.0</slip1>
+											<slip2>0.0</slip2>
+										</ode>
+										<torsional>
+											<coefficient>1.0</coefficient>
+											<surface_radius>0.0</surface_radius>
+										</torsional>
+									</friction>
+								</surface>
+							</visual>
+					</link>	
+					<!-- End of links of part "IP::a::3" -->
+					
+					<!-- Start of joints of part "IP::a::3" -->
+					<!-- End of joints of part "IP::a::3" -->
+					
+					<!-- Start of fixed connections of part "IP::a::3" -->
+					
+					<!-- End of fixed connections of part "IP::a::3" -->
+				<!-- End of declarations for part "IP::a::3" -->
+			<!-- End of parts of the pmodel IP -->
+			
+			<!-- Start of links of the pmodel IP -->
+			<!-- End of links of the pmodel IP -->
+			
+			<!-- Start of joints of the pmodel IP -->
+			<!-- End of joints of the pmodel IP -->
+			
+			<!-- Start of fixed connections of the pmodel IP -->
+			<!-- End of fixed connections of the pmodel IP -->
+		</model>
+</sdf>

@@ -1,0 +1,325 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="IJTIL">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel IJTIL -->
+			<!-- End of parts of the pmodel IJTIL -->
+			
+			<!-- Start of links of the pmodel IJTIL -->
+			<!-- link full name is IJTIL::Bottom -->
+			<link name="1-Bottom">
+					<pose>0.0 0.0 0.004999999888241291 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is IJTIL::Bottom::B -->
+					<collision name="1--B">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.10000000149011612 0.10000000149011612 0.009999999776482582</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="1--B">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.10000000149011612 0.10000000149011612 0.009999999776482582</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is IJTIL::Top::1 -->
+			<link name="2-Top">
+					<pose>-0.10000000149011612 0.0 0.014999999664723873 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is IJTIL::Top::1::B -->
+					<collision name="2--B">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.10000000149011612 0.10000000149011612 0.009999999776482582</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="2--B">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.10000000149011612 0.10000000149011612 0.009999999776482582</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- link full name is IJTIL::Top::2 -->
+			<link name="3-Top">
+					<pose>0.10000000149011612 0.0 0.014999999664723873 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- body full name is IJTIL::Top::2::B -->
+					<collision name="3--B">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.10000000149011612 0.10000000149011612 0.009999999776482582</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</collision>
+					<visual name="3--B">
+						<laser_retro>0.0</laser_retro>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<geometry>
+							<box> 
+								<size>0.10000000149011612 0.10000000149011612 0.009999999776482582</size>
+							</box>
+						</geometry>
+						<surface>
+							<bounce>
+								<restitution_coefficient>0.0</restitution_coefficient>
+								<threshold>100000.0</threshold>
+							</bounce>
+							<friction>
+								<ode>
+									<mu>1.0</mu>
+									<mu2>1.0</mu2>
+									<fdir1>0.0 0.0 0.0</fdir1>
+									<slip1>0.0</slip1>
+									<slip2>0.0</slip2>
+								</ode>
+								<torsional>
+									<coefficient>1.0</coefficient>
+									<surface_radius>0.0</surface_radius>
+								</torsional>
+							</friction>
+						</surface>
+					</visual>
+			</link>	
+			<!-- End of links of the pmodel IJTIL -->
+			
+			<!-- Start of joints of the pmodel IJTIL -->
+			<!-- Full name of joint: IJTIL::Bottom::PJ::0 from IJTIL::Bottom to IJTIL::Top::1-->
+			<joint name="4-PJ" type="prismatic">
+				<pose>0.10000000149011612 0.0 -0.004999999888241291 0.0 -0.0 0.0</pose>
+				<parent>1-Bottom</parent>
+				<child>2-Top</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 4-PJ to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: IJTIL::Bottom::PJ::0 from IJTIL::Bottom to IJTIL::Top::2-->
+			<joint name="5-PJ" type="prismatic">
+				<pose>-0.10000000149011612 0.0 -0.004999999888241291 0.0 -0.0 0.0</pose>
+				<parent>1-Bottom</parent>
+				<child>3-Top</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 5-PJ to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: IJTIL::Bottom::PJ::1 from IJTIL::Bottom to IJTIL::Top::1-->
+			<joint name="6-PJ" type="prismatic">
+				<pose>0.10000000149011612 0.0 -0.004999999888241291 0.0 -0.0 0.0</pose>
+				<parent>1-Bottom</parent>
+				<child>2-Top</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 6-PJ to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: IJTIL::Bottom::PJ::1 from IJTIL::Bottom to IJTIL::Top::2-->
+			<joint name="7-PJ" type="prismatic">
+				<pose>-0.10000000149011612 0.0 -0.004999999888241291 0.0 -0.0 0.0</pose>
+				<parent>1-Bottom</parent>
+				<child>3-Top</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 7-PJ to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: IJTIL::Bottom::PJ::2 from IJTIL::Bottom to IJTIL::Top::1-->
+			<joint name="8-PJ" type="prismatic">
+				<pose>0.10000000149011612 0.0 -0.004999999888241291 0.0 -0.0 0.0</pose>
+				<parent>1-Bottom</parent>
+				<child>2-Top</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 8-PJ to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: IJTIL::Bottom::PJ::2 from IJTIL::Bottom to IJTIL::Top::2-->
+			<joint name="9-PJ" type="prismatic">
+				<pose>-0.10000000149011612 0.0 -0.004999999888241291 0.0 -0.0 0.0</pose>
+				<parent>1-Bottom</parent>
+				<child>3-Top</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 9-PJ to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: IJTIL::Bottom::PJ::3 from IJTIL::Bottom to IJTIL::Top::1-->
+			<joint name="10-PJ" type="prismatic">
+				<pose>0.10000000149011612 0.0 -0.004999999888241291 0.0 -0.0 0.0</pose>
+				<parent>1-Bottom</parent>
+				<child>2-Top</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 10-PJ to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- Full name of joint: IJTIL::Bottom::PJ::3 from IJTIL::Bottom to IJTIL::Top::2-->
+			<joint name="11-PJ" type="prismatic">
+				<pose>-0.10000000149011612 0.0 -0.004999999888241291 0.0 -0.0 0.0</pose>
+				<parent>1-Bottom</parent>
+				<child>3-Top</child>
+				<!-- WARNING: The SDF generator relies on annotations of the joint 11-PJ to specify in SDF aspects of the joint that are
+					 accounted for in the equations. -->
+				<axis>
+					<xyz>0 0 1</xyz>
+				</axis>
+			</joint>
+			<!-- End of joints of the pmodel IJTIL -->
+			
+			<!-- Start of fixed connections of the pmodel IJTIL -->
+			<!-- End of fixed connections of the pmodel IJTIL -->
+		</model>
+</sdf>

@@ -1,0 +1,98 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+		<model name="testvar">
+			<self_collide>true</self_collide>
+			<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+			<!-- Start of parts of the pmodel testvar -->
+				<!-- Start of declarations for part "testvar::TEST" -->
+					<!-- Start of parts of part "testvar::TEST" -->
+					<!-- End of parts of part "testvar::TEST" -->
+					
+					<!-- Start of links of part "testvar::TEST" -->
+					<!-- link full name is testvar::TEST::Track -->
+					<link name="1-Track">
+							<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+							<inertial>
+								<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+								<inertia>
+									<ixx>1.0</ixx>
+									<ixy>0.0</ixy>
+									<ixz>0.0</ixz>
+									<iyy>1.0</iyy>
+									<iyz>0.0</iyz>
+									<izz>1.0</izz>
+								</inertia>
+								<mass>1.0</mass>
+							</inertial>
+							<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor to specify aspects of the 
+							sensor that are accounted for in the equations. -->
+							<!-- sensor simple name is my_sonar_sensor -->
+							<sensor name="my_sonar_sensor" type="sonar">
+								<pose>1.0 0.0 0.8999999761581421 -0.0 1.57079632679 0.0</pose>
+								<visualize>true</visualize>
+								<always_on>true</always_on>
+								<update_rate>1.0</update_rate>
+								<sonar>
+									<min>4</min>
+									<max>4.0</max>
+									<radius>-0.029999999329447746</radius>
+								</sonar>
+							</sensor>
+					</link>	
+					<!-- End of links of part "testvar::TEST" -->
+					
+					<!-- Start of joints of part "testvar::TEST" -->
+					<!-- End of joints of part "testvar::TEST" -->
+					
+					<!-- Start of fixed connections of part "testvar::TEST" -->
+					
+					<!-- End of fixed connections of part "testvar::TEST" -->
+				<!-- End of declarations for part "testvar::TEST" -->
+			<!-- End of parts of the pmodel testvar -->
+			
+			<!-- Start of links of the pmodel testvar -->
+			<!-- link full name is testvar::Core -->
+			<link name="2-Core">
+					<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+					<inertial>
+						<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+						<inertia>
+							<ixx>1.0</ixx>
+							<ixy>0.0</ixy>
+							<ixz>0.0</ixz>
+							<iyy>1.0</iyy>
+							<iyz>0.0</iyz>
+							<izz>1.0</izz>
+						</inertia>
+						<mass>1.0</mass>
+					</inertial>
+					<!-- WARNING: The SDF generator relies on annotations of the sensor my_sonar_sensor to specify aspects of the 
+					sensor that are accounted for in the equations. -->
+					<!-- sensor simple name is my_sonar_sensor -->
+					<sensor name="my_sonar_sensor" type="sonar">
+						<pose>1.0 0.0 0.8999999761581421 -0.0 1.57079632679 0.0</pose>
+						<visualize>true</visualize>
+						<always_on>true</always_on>
+						<update_rate>1.0</update_rate>
+						<sonar>
+							<min>1.0</min>
+							<max>2</max>
+							<radius>3</radius>
+						</sonar>
+					</sensor>
+			</link>	
+			<!-- End of links of the pmodel testvar -->
+			
+			<!-- Start of joints of the pmodel testvar -->
+			<!-- End of joints of the pmodel testvar -->
+			
+			<!-- Start of fixed connections of the pmodel testvar -->
+			<!-- fixed joint full name is testvar::Core::fixedJoint::testvar::TEST::Track from testvar::Core to testvar::TEST::Track -->
+			<joint name="3-fixedJoint" type="fixed">
+				<parent>2-Core</parent>
+				<child>1-Track</child>
+				<axis><xyz>0 0 1</xyz></axis>
+			</joint>
+			<!-- End of fixed connections of the pmodel testvar -->
+		</model>
+</sdf>
